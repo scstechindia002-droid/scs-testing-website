@@ -1,0 +1,252 @@
+{
+    "rewrites": [
+      {
+        "source": "/about-us",
+        "destination": "/about-us.html"
+      },
+      {
+        "source": "/life-at-scs-tech",
+        "destination": "/life-at-scs-tech.html"
+      },
+      {
+        "source": "/awards-and-recognition",
+        "destination": "/awards-and-recognition.html"
+      },
+      {
+        "source": "/career",
+        "destination": "/career.html"
+      },
+      {
+        "source": "/contact-us",
+        "destination": "/contact-us.html"
+      },
+      {
+        "source": "/oil-gas-and-power",
+        "destination": "/oil-gas-and-power.html"
+      },
+      {
+        "source": "/banking-financial-services-and-insurance",
+        "destination": "/banking-financial-services-and-insurance.html"
+      },
+      {
+        "source": "/homeland-security-and-defense",
+        "destination": "/homeland-security-and-defense.html"
+      },
+      {
+        "source": "/transport-and-logistics",
+        "destination": "/transport-and-logistics.html"
+      },
+      {
+        "source": "/telecom",
+        "destination": "/telecom.html"
+      },
+      {
+        "source": "/healthcare",
+        "destination": "/healthcare.html"
+      },
+      {
+        "source": "/agriculture",
+        "destination": "/agriculture.html"
+      },
+      {
+        "source": "/education",
+        "destination": "/education.html"
+      },
+      {
+        "source": "/critical-it-and-urban-infrastructure",
+        "destination": "/critical-it-and-urban-infrastructure.html"
+      },
+      {
+        "source": "/solid-waste-management",
+        "destination": "/solid-waste-management.html"
+      },
+      {
+        "source": "/Solid-Waste-Management-Solution",
+        "destination": "/Solid-Waste-Management-Solution.html"
+      },
+      {
+        "source": "/capacity-building-and-skill-development",
+        "destination": "/capacity-building-and-skill-development.html"
+      },
+      {
+        "source": "/digital-transformation",
+        "destination": "/digital-transformation.html"
+      },
+      {
+        "source": "/software-development",
+        "destination": "/software-development.html"
+      },
+      {
+        "source": "/ai-ml-and-data-analytics-services",
+        "destination": "/ai-ml-and-data-analytics-services.html"
+      },
+      {
+        "source": "/robotic-process-automation",
+        "destination": "/robotic-process-automation.html"
+      },
+      {
+        "source": "/blockchain",
+        "destination": "/blockchain.html"
+      },
+      {
+        "source": "/geographic-information-system-gis",
+        "destination": "/geographic-information-system-gis.html"
+      },
+      {
+        "source": "/cybersecurity",
+        "destination": "/cybersecurity.html"
+      },
+      {
+        "source": "/cloud",
+        "destination": "/cloud.html"
+      },
+      {
+        "source": "/it-consultancy",
+        "destination": "/it-consultancy.html"
+      },
+      {
+        "source": "/data-center-services",
+        "destination": "/data-center-services.html"
+      },
+      {
+        "source": "/disaster-emergency-services",
+        "destination": "/disaster-emergency-services.html"
+      },
+      {
+        "source": "/intelligent-debriefing-with-analytics-ida",
+        "destination": "/intelligent-debriefing-with-analytics-ida.html"
+      },
+      {
+        "source": "/smart-landslide-early-warning-system",
+        "destination": "/smart-landslide-early-warning-system.html"
+      },
+      {
+        "source": "/gis-based-workforce-and-fleet-tracking-system",
+        "destination": "/gis-based-workforce-and-fleet-tracking-system.html"
+      },
+      {
+        "source": "/project-process-management-system",
+        "destination": "/project-process-management-system.html"
+      },
+      {
+        "source": "/blogs",
+        "destination": "/blogs.html"
+      },
+      {
+        "source": "/case-studies",
+        "destination": "/case-studies.html"
+      },
+      {
+        "source": "/news-events",
+        "destination": "/news-events.html"
+      },
+      {
+        "source": "/slider1-products",
+        "destination": "/slider1-products.html"
+      },
+      {
+        "source": "/slider-2-cybersecurity",
+        "destination": "/slider-2-cybersecurity.html"
+      }
+      ,
+      {
+        "source": "/sectors",
+        "destination": "/sectors.html"
+      }
+      ,
+      {
+        "source": "/slider4-partnership",
+        "destination": "/slider4-partnership.html"
+      },
+      {
+        "source": "/Landslide-Warning-System",
+        "destination": "/Landslide-Warning-System.html"
+      },
+      {
+        "source": "/Demand-Load-Forecasting",
+        "destination": "/Demand-Load-Forecasting.html"
+      },
+      {
+        "source": "/solid-waste-management",
+        "destination": "/solid-waste-management.html"
+      },
+      {
+        "source": "/Solid-Waste-Management",
+        "destination": "/Solid-Waste-Management.html"
+      },
+      {
+        "source": "/disaster-emergency-services",
+        "destination": "/disaster-emergency-management.html"
+      },
+      {
+        "source": "/Security Operations Centre.html",
+        "destination": "/Security Operations Centre.html.html"
+      },
+      {
+        "source": "/integrated-command-control-center",
+        "destination": "/integrated-command-control-center.html"
+      },
+      {
+        "source": "/smart-metro-rail-system",
+        "destination": "/smart-metro-rail-system.html"
+      },
+      {
+        "source": "/fully-integrated-security-system",
+        "destination": "/fully-integrated-security-system.html"
+      },
+      {
+        "source": "/Smart-City-IT-Ecosystem",
+        "destination": "/Smart-City-IT-Ecosystem.html"
+      },
+      {
+        "source": "/enterprise-gis-network-analysis",
+        "destination": "/enterprise-gis-network-analysis.html"
+      },
+      {
+        "source": "/security-operations-centre-airforce",
+        "destination": "/security-operations-centre-airforce.html"
+      },
+      {
+        "source": "/Disaster-and-Emergency-Management",
+        "destination": "/Disaster-and-Emergency-Management.html"
+      }
+      ,
+      {
+        "source": "/Security-Operations-Centre",
+        "destination": "/Security-Operations-Centre.html"
+      }
+      ,
+      {
+        "source": "/Integrated-Command-&-Control-Center",
+        "destination": "/Integrated-Command-&-Control-Center.html"
+      }
+      ,
+      {
+        "source": "/Smart-Metro-Rail-System",
+        "destination": "/Smart-Metro-Rail-System.html"
+      }
+      
+      ,
+      {
+        "source": "/Centralized-Monitoring-System",
+        "destination": "/Centralized-Monitoring-System.html"
+      }
+      ,
+      {
+        "source": "/Fully-Integrated-Security-System",
+        "destination": "/Fully-Integrated-Security-System.html"
+      }
+      ,
+      {
+        "source": "/Enterprise-GIS-and-Network-Analysis",
+        "destination": "/Enterprise-GIS-and-Network-Analysis.html"
+      }
+      ,
+      {
+        "source": "/Strengthening-National-Defence",
+        "destination": "/Strengthening-National-Defence.html"
+      }
+      
+    ]
+  }
+  
