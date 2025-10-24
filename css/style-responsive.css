@@ -649,9 +649,31 @@ Project:    SCS Tech
         padding: 10px 15px;
         font-size: 12px;
     }
-    .offering-description-1, .section-paragraph{
+    .offering-description-1, .section-paragraph , .milestone-desc1, .sector-para{
         text-align: left;
     }
+    .award-heading2{
+        margin-bottom: 0px;
+    }
+        .award-img2{
+            margin-top: 2rem;
+        }
+        .expertise1-middle-heading{
+            line-height: 100%;
+        } 
+        .milestone-title1{
+            white-space:unset;
+        }
+        .product-main-heading{
+            font-size: 40px;
+        }
+        .product-title{
+            padding-top: 100px;
+            line-height: 36px;
+        } 
+        .main-paragraph{
+            padding: 0px 16px;
+        }
 }
 
 

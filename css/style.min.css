@@ -8172,8 +8172,8 @@ line-height: 30px; /* 166.667% */
 
 .sector-card:hover {
   transform: translateY(-5px);
-  border-right: 9px solid #ff4545;
-  border-bottom: 9px solid #ff4545;
+  border-right: 4px solid #ff4545;
+  border-bottom: 4px solid #ff4545;
 }
 
 .sector-card h4 {
@@ -13284,7 +13284,7 @@ margin-bottom: 2rem;
 }
 
 .bg-geographic-information-system {
-    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1747041899/navy-operations-specialist-examines-world-map-with-gps-system-his-tablet_j3olx7.jpg');
+    background-image: url('https://img.freepik.com/premium-photo/digital-navigation-map-route-location-pins-gps-teal-technology-global-positioning-system-network_63580-722.jpg');
 }
 
 .bg-cybersecurity {
