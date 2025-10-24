@@ -649,6 +649,9 @@ Project:    SCS Tech
         padding: 10px 15px;
         font-size: 12px;
     }
+    .offering-description-1, .section-paragraph{
+        text-align: left;
+    }
 }
 
 
