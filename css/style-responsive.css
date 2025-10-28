@@ -699,6 +699,12 @@ Project:    SCS Tech
         .carousel-control-prev{
             left: 0px;
         }
+        .product-main-heading{
+            line-height: 46px;
+        }
+        .small-section{
+            padding: 16px 0px !important;
+        }
         
 }
 
