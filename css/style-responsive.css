@@ -656,7 +656,7 @@ Project:    SCS Tech
         margin-bottom: 0px;
     }
         .award-img2{
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
         .expertise1-middle-heading{
             line-height: 100%;
@@ -676,7 +676,24 @@ Project:    SCS Tech
         }
         .column-reverse-sm-screen{
             flex-direction: column-reverse;
+           
         }
+        .award-heading1, .award-para{
+            line-height: 26px;
+        }
+        .award-para-padding{
+            padding-bottom: 5rem;
+        }
+        .award-heading2{
+            font-size: 30px;
+        }
+        .right-banner{
+            line-height: 32px;
+        } 
+        .heroH1Sector{
+            line-height: 32px;
+        } 
+        
 }
 
 
@@ -732,7 +749,6 @@ Project:    SCS Tech
         font-size: 30px;
         letter-spacing: 0em;
     }
-    
     .hs-line-15{
         font-size: 24px;
     }
