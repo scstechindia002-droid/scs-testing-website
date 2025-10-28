@@ -693,6 +693,12 @@ Project:    SCS Tech
         .heroH1Sector{
             line-height: 32px;
         } 
+        .product-carousel-container{
+              padding: 43px 0px;
+        }
+        .carousel-control-prev{
+            left: 0px;
+        }
         
 }
 
