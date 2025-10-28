@@ -674,6 +674,9 @@ Project:    SCS Tech
         .main-paragraph{
             padding: 0px 16px;
         }
+        .column-reverse-sm-screen{
+            flex-direction: column-reverse;
+        }
 }
 
 
