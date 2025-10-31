@@ -32,7 +32,6 @@
         <link rel="stylesheet" href="css/magnific-popup.css">    
  
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
 <script>
@@ -318,13 +317,35 @@
                     </ul>
                 </div>
             </div>
-            <div class="case-study-hero" id="videoContainer">
+            <!-- ---commit-old-video------ -->
+            <!-- <div class="case-study-hero" id="videoContainer">
                 <video id="bgVideo" class="bg-video" loop playsinline>
                   <source src="https://res.cloudinary.com/dyfpbxcip/video/upload/v1747220023/SCS_Final_Film__76pct_smaller_k5lclx_1_1_1_zwazt3.webm" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <button id="playBtn" class="play-button">▶</button>
-              </div>
+              </div> -->
+
+
+<!-- --------------new-video-add----- -->
+  <section class="hero-video-container">
+            <div class="video-overlay"></div>
+            <video id="hero-video" class="hero-video" muted="" loop="" autoplay="">
+                <source src="https://res.cloudinary.com/dyfpbxcip/video/upload/v1747220023/SCS_Final_Film__76pct_smaller_k5lclx_1_1_1_zwazt3.webm" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="video-controls">
+                <button class="play-btn">►</button>
+                <input type="range" class="progress-slider" min="0" max="100" value="0">
+                <button class="mute-btn">🔇</button>
+                <button class="fullscreen-btn">⛶</button>
+            </div>
+        </section>
+
+
+
+
             <section class="small-section" style="padding: 0px !important;">
                 <div class="case-study-container">
                     <!-- Case Study 1 -->
@@ -684,7 +705,9 @@
                 window.addEventListener('scroll', checkMilestones);
             });
         </script>
-        <script>
+
+        <!-- -----old-video-script-commit-- -->
+        <!-- <script>
             const video = document.getElementById("bgVideo");
             const playBtn = document.getElementById("playBtn");
             const container = document.getElementById("videoContainer");
@@ -709,8 +732,134 @@
               video.play();
               playBtn.style.display = "none";
             });
-          </script>
+          </script> -->
     
+          <!-- ----new-video-script-add----------- -->
+             <script>
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const video = document.getElementById('hero-video');
+                const playBtn = document.querySelector('.play-btn');
+                const muteBtn = document.querySelector('.mute-btn');
+                const progressSlider = document.querySelector('.progress-slider');
+                const fullscreenBtn = document.querySelector('.fullscreen-btn');
+                const heroContainer = document.querySelector('.hero-video-container');
+                const mobileTouchOverlay = document.querySelector('.mobile-touch-overlay');
+
+                // Detect mobile devices
+                const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+                // Mobile-specific setup
+                if (isMobile) {
+                    video.muted = false; // Start unmuted on mobile
+                    video.controls = false; // We'll use our custom controls
+                    muteBtn.textContent = '🔊';
+
+                    // Touch overlay for play/pause
+                    mobileTouchOverlay.addEventListener('click', function () {
+                        togglePlay();
+                        // Briefly show controls when tapping
+                        videoControls.style.opacity = 1;
+                        setTimeout(() => {
+                            if (!video.paused) {
+                                videoControls.style.opacity = 0;
+                            }
+                        }, 2000);
+                    });
+                } else {
+                    // Desktop - start muted for autoplay
+                    video.muted = true;
+                    muteBtn.textContent = '🔇';
+                    try {
+                        video.play();
+                    } catch (e) {
+                        console.log("Autoplay prevented:", e);
+                    }
+                }
+
+                // Play/Pause
+                playBtn.addEventListener('click', togglePlay);
+
+                function togglePlay() {
+                    if (video.paused) {
+                        video.play().catch(e => {
+                            // If play fails (often due to autoplay policies), show controls
+                            videoControls.style.opacity = 1;
+                            console.log("Play failed:", e);
+                        });
+                        playBtn.textContent = '❚❚';
+                    } else {
+                        video.pause();
+                        playBtn.textContent = '►';
+                    }
+                }
+
+                // Mute/Unmute
+                muteBtn.addEventListener('click', toggleMute);
+
+                function toggleMute() {
+                    video.muted = !video.muted;
+                    muteBtn.textContent = video.muted ? '🔇' : '🔊';
+                }
+
+                // Progress slider
+                video.addEventListener('timeupdate', updateProgress);
+
+                function updateProgress() {
+                    if (!isNaN(video.duration)) {
+                        const percent = (video.currentTime / video.duration) * 100;
+                        progressSlider.value = percent;
+                    }
+                }
+
+                progressSlider.addEventListener('input', function () {
+                    const seekTime = (this.value / 100) * video.duration;
+                    video.currentTime = seekTime;
+                });
+
+                // Fullscreen
+                fullscreenBtn.addEventListener('click', toggleFullscreen);
+
+                function toggleFullscreen() {
+                    if (!document.fullscreenElement) {
+                        heroContainer.requestFullscreen().catch(err => {
+                            console.error("Fullscreen error:", err);
+                        });
+                    } else {
+                        document.exitFullscreen();
+                    }
+                }
+
+                // Handle orientation changes on mobile
+                window.addEventListener('orientationchange', function () {
+                    // Recalculate video dimensions
+                    video.style.width = 'auto';
+                    video.style.height = 'auto';
+                });
+
+                // Better touch handling for progress slider
+                progressSlider.addEventListener('touchstart', function () {
+                    videoControls.style.opacity = 1;
+                });
+
+                // Hide controls after delay (mobile)
+                let hideControlsTimeout;
+                function resetHideControlsTimeout() {
+                    clearTimeout(hideControlsTimeout);
+                    if (!video.paused) {
+                        hideControlsTimeout = setTimeout(() => {
+                            videoControls.style.opacity = 0;
+                        }, 3000);
+                    }
+                }
+
+                heroContainer.addEventListener('mousemove', resetHideControlsTimeout);
+                heroContainer.addEventListener('touchmove', resetHideControlsTimeout);
+
+                // Initial setup
+                resetHideControlsTimeout();
+            });
+        </script>
     </body>
 
 </html>
