@@ -759,10 +759,10 @@
                     mobileTouchOverlay.addEventListener('click', function () {
                         togglePlay();
                         // Briefly show controls when tapping
-                        videoControls.style.opacity = 1;
+                        //videoControls.style.opacity = 1;
                         setTimeout(() => {
                             if (!video.paused) {
-                                videoControls.style.opacity = 0;
+                               // videoControls.style.opacity = 0;
                             }
                         }, 2000);
                     });
@@ -784,7 +784,7 @@
                     if (video.paused) {
                         video.play().catch(e => {
                             // If play fails (often due to autoplay policies), show controls
-                            videoControls.style.opacity = 1;
+                            //videoControls.style.opacity = 1;
                             console.log("Play failed:", e);
                         });
                         playBtn.textContent = '❚❚';
@@ -839,7 +839,7 @@
 
                 // Better touch handling for progress slider
                 progressSlider.addEventListener('touchstart', function () {
-                    videoControls.style.opacity = 1;
+                   // videoControls.style.opacity = 1;
                 });
 
                 // Hide controls after delay (mobile)
@@ -848,7 +848,7 @@
                     clearTimeout(hideControlsTimeout);
                     if (!video.paused) {
                         hideControlsTimeout = setTimeout(() => {
-                            videoControls.style.opacity = 0;
+                            //videoControls.style.opacity = 0;
                         }, 3000);
                     }
                 }
