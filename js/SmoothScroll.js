@@ -521,3 +521,38 @@ if (isMouseWheelSupported && isChrome) {
 };
 
 })();
+
+
+// Smooth wheel scroll (basic version)
+let scrollTarget = window.scrollY;
+let isScrolling = false;
+
+function smoothScroll(delta) {
+  scrollTarget += delta;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  if (scrollTarget < 0) scrollTarget = 0;
+  if (scrollTarget > maxScroll) scrollTarget = maxScroll;
+
+  if (!isScrolling) {
+    isScrolling = true;
+
+    function step() {
+      const distance = scrollTarget - window.scrollY;
+      const move = distance * 0.2; // easing factor
+      if (Math.abs(move) < 0.5) {
+        window.scrollTo(0, scrollTarget);
+        isScrolling = false;
+        return;
+      }
+      window.scrollBy(0, move);
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  }
+}
+
+window.addEventListener('wheel', e => {
+  e.preventDefault(); // stop default scroll
+  smoothScroll(e.deltaY);
+}, { passive: false });
