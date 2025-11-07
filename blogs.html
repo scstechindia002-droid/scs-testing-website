@@ -399,7 +399,7 @@
         <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
         <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/blog.js"></script>      
+        <!-- <script type="text/javascript" src="js/blog.js"></script>       -->
         <script type="text/javascript" src="js/nav.js"></script>    
         <script>
 
@@ -412,17 +412,7 @@
                    const firstBlog = savedBlogData[0];
                         const secondBlog = savedBlogData[1];
                         const thirdBlog = savedBlogData[2];
-                        console.log('onePost',firstBlog)
-                        console.log('secondPost',secondBlog)
-                        console.log('thirdPost',thirdBlog )
-                       
-                  
                     const recentPost = savedBlogData.map((post) => {
-                       
-                        console.log(post)
-                       
-
-                        console.log('firstBlog.postTitle', post.title.rendered)
                    function formatDate(dateString) {
                     const date = new Date(dateString);
                     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -436,8 +426,6 @@
                     return `${dayName}, ${day} ${month} ${year}`;
                 }
             
-                
-              
                     // Select the container for large and small blogs
                     const largeBlogContainer = document.querySelector('.col-lg-6');
                     const smallBlogsContainer = document.querySelector('.small-blogs-container');
