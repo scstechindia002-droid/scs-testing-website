@@ -1084,8 +1084,7 @@
             
           </script>
           <script>
-            
-fetch("https://blog.scstechindia.com/wp-json/wp/v2/posts?per_page=3&_embed")
+    fetch("https://blog.scstechindia.com/wp-json/wp/v2/posts?per_page=3&_embed")
   .then((response) => response.json())
   .then((data) => {
     const latestBlogContainer = document.getElementById("latestBlogContainer");
@@ -1142,7 +1141,7 @@ fetch("https://blog.scstechindia.com/wp-json/wp/v2/posts?per_page=3&_embed")
     localStorage.setItem('recentBlogsData', JSON.stringify(recentBlogsData));
   })
   .catch((error) => console.error("Error fetching blog posts:", error));
-
+      
           </script>
     </body>
 </html>
