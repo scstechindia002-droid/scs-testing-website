@@ -10518,3 +10518,13 @@ p.career-text {
         font-size: 20px;
     }
 }
+
+/* --------layout-shifing-issue-resolved-- */
+body.appear-animate {
+  opacity: 1;
+  transform: translateY(0); /* avoids layout changes */
+  transition: opacity 0.4s ease;
+}
+body.loaded {
+  opacity: 1;
+}
