@@ -565,7 +565,7 @@
                         <div class="container1">
                             <div class="row">
                                 <div class="col-md-3">
-                                      <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1762408973/experience1_ocjfo7.webp" alt="Left Image" class="image-left">
+                                      <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1762408973/experience1_ocjfo7.webp" width="400" height="300" alt="Left Image" class="image-left">
                                 </div>
                                 <div class="stats-box col-md-6">
                                     <div class="row">
@@ -1016,7 +1016,7 @@
         <!-- JS -->
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+        <script type="text/javascript" src="js/bootstrap.min.js" async></script>   
         <script type="text/javascript" src="js/SmoothScroll.js"></script>
         <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
         <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
@@ -1161,12 +1161,19 @@
       
           </script>
 
-            
-<script>
+    <script>
+  function loadAnalytics() {
+  const s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0';
+  s.async = true;
+  document.head.appendChild(s);
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true });
+  gtag('config', 'G-K6N9WEW7B0', { send_page_view: true });
+}
+window.addEventListener('scroll', loadAnalytics, { once: true });
+
 </script>
     </body>
 </html>

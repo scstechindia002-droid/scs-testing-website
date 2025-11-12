@@ -604,12 +604,19 @@
       
         <script type="text/javascript" src="js/nav.js"></script> 
 
-           
-<script>
+     <script>
+  function loadAnalytics() {
+  const s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0';
+  s.async = true;
+  document.head.appendChild(s);
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX', { 'anonymize_ip': true });
+  gtag('config', 'G-K6N9WEW7B0', { send_page_view: true });
+}
+window.addEventListener('scroll', loadAnalytics, { once: true });
+
 </script>
     </body>
 
