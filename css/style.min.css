@@ -484,6 +484,10 @@ a:hover {
     color: #888;
     text-decoration: none;
 }
+
+.navbar{
+    min-height: 80px;
+}
 .navbar-brand img {
     width: 110px;
     height: auto;
