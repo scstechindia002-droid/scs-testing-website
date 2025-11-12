@@ -6,7 +6,7 @@
  
 
 @font-face {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Free";
   font-display: swap;
   src: url("../fonts/fontawesome-webfont3e6e.eot?v=4.7.0");
   src: url("../fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0")
@@ -21,7 +21,7 @@
 }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 Font Awesome 5 Free;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
