@@ -1,3 +1,4 @@
+
 @import url(font-awesome.min.css);
 @import url(et-line.css);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap);
@@ -10554,4 +10555,40 @@ body.appear-animate {
 }
 body.loaded {
   opacity: 1;
+}
+
+@font-face {
+    font-family: 'YourFont';
+    src: url('YourFont.woff2') format('woff2');
+    font-display: swap;
+}
+.small-section {
+    min-height: 80px; 
+}
+h2.hs-line-2 {
+    min-height: 60px; 
+}
+ul.navbar-nav {
+    min-height: 50px; 
+}
+button.btn-submit {
+    min-height: 40px; 
+}
+#text {
+    min-height: 20px; 
+}
+.small-section.pb-10 {
+    min-height: 100px; 
+}
+div.loader {
+    min-height: 50px;
+    display: block;
+    visibility: hidden;
+}
+
+ul.navbar-nav {
+    min-height: 50px;
+}
+#text {
+    min-height: 20px;
 }
