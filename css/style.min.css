@@ -493,6 +493,9 @@ a:hover {
     height: auto;
     object-fit: contain;
 }
+#navbarNav{
+    min-height: 60px;
+}
 h1,
 h2,
 h3,
