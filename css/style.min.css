@@ -380,7 +380,7 @@ video {
     height: 100%;
     background: #131313;
 }
-.loader {
+/* .loader {
     width: 70px;
     height: 70px;
     position: absolute;
@@ -389,7 +389,23 @@ video {
     margin: -25px 0 0 -25px;
     font-size: 10px;
     z-index: 100001;
+} */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .sk-cube-grid {
     width: 40px;
     height: 40px;
