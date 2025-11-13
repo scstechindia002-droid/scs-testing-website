@@ -505,10 +505,17 @@ a:hover {
 .navbar{
     min-height: 80px;
 }
-.navbar-brand img {
-    width: 110px;
-    height: auto;
-    object-fit: contain;
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 60px;
+}
+
+.navbar-nav {
+    min-height: 50px;
 }
 #navbarNav{
     min-height: 60px;
