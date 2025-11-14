@@ -507,14 +507,6 @@ a:hover {
     min-height: 80px;
 }
 
-.navbar-brand{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 60px;
-}
-
 .navbar-nav {
     min-height: 50px;
 }
