@@ -10556,39 +10556,24 @@ body.appear-animate {
 body.loaded {
   opacity: 1;
 }
-
 @font-face {
-    font-family: 'YourFont';
-    src: url('YourFont.woff2') format('woff2');
-    font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap') format('woff2');
+}
+
+.fixed-height-medium{
+    min-height: unset;
+} 
+h2 {
+  line-height: 1.2;
+  min-height: 2.8rem; /* adjust based on your design */
 }
 .small-section {
-    min-height: 80px; 
+  min-height: 200px; /* your design height */
 }
-h2.hs-line-2 {
-    min-height: 60px; 
-}
-ul.navbar-nav {
-    min-height: 50px; 
-}
-button.btn-submit {
-    min-height: 40px; 
-}
-#text {
-    min-height: 20px; 
-}
-.small-section.pb-10 {
-    min-height: 100px; 
-}
-div.loader {
-    min-height: 50px;
-    display: block;
-    visibility: hidden;
-}
-
-ul.navbar-nav {
-    min-height: 50px;
-}
-#text {
-    min-height: 20px;
+.home-section{
+height: 600px;
 }
