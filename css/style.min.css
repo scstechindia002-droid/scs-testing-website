@@ -10556,7 +10556,7 @@ body.appear-animate {
 body.loaded {
   opacity: 1;
 }
-@font-face {
+/* @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -10569,13 +10569,13 @@ body.loaded {
 } 
 h2 {
   line-height: 1.2;
-  min-height: 2.8rem; /* adjust based on your design */
+  min-height: 2.8rem; 
 }
 .small-section {
-  min-height: 200px; /* your design height */
+  min-height: 200px; 
 }
 .home-section{
 height: 600px;
 }
 
-/* ---------------------- */
+---------------------- */
