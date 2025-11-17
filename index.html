@@ -1174,5 +1174,19 @@
 window.addEventListener('scroll', loadAnalytics, { once: true });
 
 </script>
+<!-- --------------page-load-time-image-loadinfg-issue-resolve---------------- -->
+<script>
+    document.querySelectorAll("img").forEach(img => {
+  if (!img.getAttribute("width") || !img.getAttribute("height")) {
+    const tempImg = new Image();
+    tempImg.src = img.src;
+
+    tempImg.onload = function () {
+      img.setAttribute("width", this.width);
+      img.setAttribute("height", this.height);
+    }
+  }
+});
+</script>
     </body>
 </html>
