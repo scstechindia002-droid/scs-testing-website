@@ -5889,7 +5889,7 @@ section:hover .small-item-carousel .owl-next {
 .section-sector p {
     color: #fff;
     font-style: normal;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .middle-heading {
     text-align: center;
@@ -6207,7 +6207,7 @@ section:hover .small-item-carousel .owl-next {
     .box-heading {
         color: #000;
         text-align: center;
-        font-family: Poppins, sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 18px;
     }
     .case-study-banner {
@@ -6965,7 +6965,7 @@ textarea.form-control {
     font-size: 20px;
     line-height: 20px;
     display: flex;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .content-container p {
     width: 50rem;
@@ -7002,7 +7002,7 @@ textarea.form-control {
 .heroH3,
 .heroH4 {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
 }
 .feature-section {
@@ -7040,7 +7040,7 @@ textarea.form-control {
 }
 .custom-section-text {
     color: #000;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     line-height: 38px;
 }
@@ -7054,7 +7054,7 @@ textarea.form-control {
 .who-description,
 .who-sub-description {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .case-study-title {
     font-size: 38px;
@@ -7190,7 +7190,7 @@ textarea.form-control {
 .feature-heading,
 .sl4-middle-text {
     text-align: center;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .vertical-separator {
@@ -7215,7 +7215,7 @@ textarea.form-control {
 }
 .logo-description {
     color: #d1d1d1;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 1.33;
@@ -7268,7 +7268,7 @@ textarea.form-control {
 }
 .section-title {
     color: #fff;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -7293,7 +7293,7 @@ textarea.form-control {
 }
 .blog-date {
     color: #ff825e;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
@@ -7309,7 +7309,7 @@ textarea.form-control {
 .right-text-h1,
 .sl3-text1 {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .blog-title {
@@ -7480,7 +7480,7 @@ textarea.form-control {
 }
 .cybersecurity-title,
 .sl3-text2 {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 300;
 }
@@ -7499,7 +7499,7 @@ textarea.form-control {
 .cybersecurity-subtitle,
 .cybersecurity-text {
     color: #000;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
     line-height: 32px;
 }
@@ -7515,7 +7515,7 @@ textarea.form-control {
 .red-text,
 .wcu-title {
     font-weight: 700;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .custom-btn {
@@ -7636,7 +7636,7 @@ textarea.form-control {
 }
 .title-text {
     color: #fff;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 600;
@@ -7647,7 +7647,7 @@ textarea.form-control {
 .description-text1 {
     text-align: justify;
     font-weight: 300;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 @media screen and (max-width: 767px) {
@@ -7679,7 +7679,7 @@ textarea.form-control {
 .about-us-middle-text {
     color: #f98383;
     text-align: center;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -7718,7 +7718,7 @@ textarea.form-control {
 }
 .sl2-blog-date,
 .sl2-blog-title {
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
     line-height: 26px;
     color: #000;
@@ -7736,13 +7736,13 @@ textarea.form-control {
     font-size: 16px;
     font-weight: 500;
     line-height: 159%;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 @media (min-width>1350px) {
     .card-description-about2 {
         color: #fff;
-        font-family: Poppins, sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
@@ -7872,7 +7872,7 @@ textarea.form-control {
 }
 .milestone-title {
     color: #fff;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 600;
@@ -7881,7 +7881,7 @@ textarea.form-control {
 }
 .milestone-desc {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -7925,7 +7925,7 @@ textarea.form-control {
 }
 .leader-name {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 600;
@@ -7934,7 +7934,7 @@ textarea.form-control {
 }
 .leader-designation {
     color: #fdaaaa;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -7944,7 +7944,7 @@ textarea.form-control {
 .about-us-our-team-text,
 .hero-title-about-us {
     font-weight: 700;
-    font-family: Poppins, sans-serif;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
     color: #fff;
 }
@@ -7992,7 +7992,7 @@ textarea.form-control {
 .hero-subtitle-about-us {
     color: #fff;
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
@@ -8015,7 +8015,7 @@ textarea.form-control {
     font-weight: 700;
     text-transform: capitalize;
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .hero-button-about-us:hover {
@@ -8041,7 +8041,7 @@ textarea.form-control {
 }
 .expertise1-middle-para {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 19px;
     font-style: normal;
     font-weight: 300;
@@ -8158,7 +8158,7 @@ textarea.form-control {
 }
 .project-title {
     color: #000;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-style: normal;
     font-weight: 600;
@@ -8168,7 +8168,7 @@ textarea.form-control {
 }
 .project-desc {
     color: #000;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -8178,7 +8178,7 @@ textarea.form-control {
 .highlight-text-products,
 .main-heading-products {
     font-weight: 600;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .arrow-circle1 {
@@ -8229,7 +8229,7 @@ textarea.form-control {
 .description-text-products {
     color: #fff;
     text-align: justify;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -8259,7 +8259,7 @@ textarea.form-control {
 }
 .title-text1,
 .title-text2 {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 45px;
     font-weight: 500;
     line-height: 14px;
@@ -8319,7 +8319,7 @@ textarea.form-control {
 .slider-heading1,
 .slider-text1 {
     font-weight: 700;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .slider-text1 {
     color: #fff;
@@ -8398,7 +8398,7 @@ textarea.form-control {
     font-size: 17.803px;
     font-style: normal;
     font-weight: 600;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .btn-text-submit:hover,
 .form-control,
@@ -8505,7 +8505,7 @@ textarea.form-control {
     margin-left: -64px;
 }
 .contact-us-heading2 {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-style: normal;
 }
@@ -8514,7 +8514,7 @@ textarea.form-control {
 .middle-red-h1,
 .who-title {
     color: #ff7e7e;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .location-text {
@@ -8565,7 +8565,7 @@ textarea.form-control {
 .sector-para {
     color: #fff;
     text-align: justify;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -8575,11 +8575,11 @@ textarea.form-control {
 .middle-text-sector,
 .paragraph {
     text-align: center;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .left-heading-sector {
     color: #fff;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 700;
@@ -8653,7 +8653,7 @@ textarea.form-control {
 }
 .sectors-paragraph,
 h2.career-heading {
-    font-family: poppins;
+     font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .article-date,
@@ -8689,7 +8689,7 @@ h2.career-heading {
 .story-title,
 .team-member-name,
 .team-member-title {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .sectors-container {
     max-width: 1200px;
@@ -8995,7 +8995,7 @@ p.career-text {
 .feature-text-ida,
 .product-section-text {
     text-align: justify;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
 .career-middle-title {
@@ -10459,7 +10459,7 @@ p.career-text {
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
-        font-family: Poppins, sans-serif;
+        font-family: 'Poppins', sans-serif;
     }
     .success-stories-mobile-only {
         display: block;
