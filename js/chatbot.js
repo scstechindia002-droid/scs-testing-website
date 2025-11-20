@@ -616,8 +616,8 @@ function IndustriesTabShow() {
     </tr>
     
     <tr>
-      <td><a href="hrefcritical-it-and-urban-infrastructure">Critical IT and Urban Infrastructure</a></td>
-       <td><a href="#">Solid Waste Management</a></td>
+      <td><a href="critical-it-and-urban-infrastructure">Critical IT and Urban Infrastructure</a></td>
+       <td><a href="solid-waste-management">Solid Waste Management</a></td>
     </tr>
   </tbody>
 </table></div></div>`;
