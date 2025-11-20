@@ -196,17 +196,7 @@ function serviceDetailsTabShow() {
     </tr>
    
     <tr >
-      <td><a href="#" onclick="disasterEmergencyManagementTabShow()">Disaster/Emergency Management</a></td>
-       <td><a href="#" onclick="productDiscussionTabShow()">Products</a></td>
-    </tr>
-   
-    <tr>
-      <td><a href="#">Smart Landslide Early Warning System</a></td>
-      <td><a href="#">GIS-Based Workforce and Fleet Management System</a></td>
-    </tr>
-   
-    <tr>
-      <td><a href="#">Project Process Management System</a></td>
+      <td colspan="2" ><a href="#" onclick="disasterEmergencyManagementTabShow()">Disaster/Emergency Management</a></td>
     </tr>
   </tbody>
 </table>
@@ -215,7 +205,7 @@ function serviceDetailsTabShow() {
 `;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
-      top: 520,
+      top: chatbotContent.scrollHeight,
       behavior: "smooth",
     });
   }, 1000);
