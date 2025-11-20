@@ -10957,6 +10957,9 @@ max-width: unset;
 .industries-list{
     margin-top: 10px;
 }
+.services-table{
+    margin-top: 15px;
+}
 @keyframes up-Down {
   0% {
     transform: translateY(0px);

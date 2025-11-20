@@ -130,7 +130,7 @@ function serviceTab() {
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content">We offer expertise across several key areas. Which area interests you the most? 
  <div><b>Services</b>
- <table class="services-table mt-1" border="1" cellpadding="8" cellspacing="0">
+ <table class="services-table" border="1" cellpadding="8" cellspacing="0">
   
   <tbody>
     <tr">
@@ -313,7 +313,7 @@ function aiDataAnalyticsTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p><b>AI/ML & Data Analytics</b>services focus on helping organizations leverage their data assets to drive informed decision-making. This includes implementing advanced analytics platforms, building predictive models using Machine Learning (ML), developing Artificial Intelligence (AI) solutions like chatbots or smart automation, and providing Business Intelligence (BI) dashboards for actionable insights, transforming raw data into strategic foresight.</p></diV>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p><b>AI/ML & Data Analytics</b> services focus on helping organizations leverage their data assets to drive informed decision-making. This includes implementing advanced analytics platforms, building predictive models using Machine Learning (ML), developing Artificial Intelligence (AI) solutions like chatbots or smart automation, and providing Business Intelligence (BI) dashboards for actionable insights, transforming raw data into strategic foresight.</p></diV>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -686,7 +686,7 @@ function productDiscussionTabShow() {
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `
     <div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div> 
-    <div class="reply-message-content"><p><b>All Products:-</b></p>
+    <div class="reply-message-content"><b>All Products</b>
  <tr">
       </tr"><table class="services-table" border="1" cellpadding="8" cellspacing="0">
   
