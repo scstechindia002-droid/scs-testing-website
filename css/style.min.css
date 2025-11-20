@@ -10869,6 +10869,9 @@ body.appear-animate{
   color: #000000;
   padding: 0px 15px;
 }
+.chatbot-input-container input::placeholder{
+    color: #000000;
+}
 
 .chatbot-input-container .back-btn button {
   background-color: #ffb4b4;
