@@ -10860,6 +10860,7 @@ body.appear-animate{
   height: 60px;
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 8px;
   padding: 20px;
 }
@@ -10910,6 +10911,7 @@ body.appear-animate{
   justify-content: left;
   gap: 6px;
   padding: 2px 0px !important;
+  margin-top: 12px;
 }
 .chatbot-details-btn-container button,
 #dropdownMenuButton1 {

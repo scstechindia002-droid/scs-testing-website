@@ -10,6 +10,7 @@ chatbotContainer.style.display = "none";
 chatbotShowBtn.style.display = "flex";
 // -----------chatbot-open---------------------
 chatbotShowBtn.addEventListener("click", () => {
+    getReply()
   chatbotContainer.style.display = "block";
   chatbotShowBtn.style.display = "none";
 });
@@ -40,39 +41,39 @@ chatbotCloseBtn.addEventListener("click", () => {
   chatbotInput.disabled = false;
 });
 
-function chatbotMessage() {
-  const userMessage = chatbotInput.value.trim();
-  if (!userMessage) {
-    return false;
-  }
+// function chatbotMessage() {
+//   const userMessage = chatbotInput.value.trim();
+//   if (!userMessage) {
+//     return false;
+//   }
 
-  appendMessage(userMessage);
-  // Disable input AFTER first message
-  chatbotInput.disabled = true;
+//   appendMessage(userMessage);
+//   // Disable input AFTER first message
+//   chatbotInput.disabled = true;
 
-  // Optional: disable send button
-  // sendButton.disabled = true;
-}
+//   // Optional: disable send button
+//   // sendButton.disabled = true;
+// }
 
-function appendMessage(userMessage) {
-  console.log("userMessage", userMessage);
-  // ------------sendMessage---------------------
-  const typeMessage = document.createElement("div");
-  typeMessage.className = "typemessage-container";
-  typeMessage.innerHTML = `<div class="typemessage-content">${userMessage}</div><div class="chatbot-type-icon"><img src="./images/chatbot-use-icon.png" alt="message-cion"></div>`;
-  chatbotContent.appendChild(typeMessage);
+// function appendMessage(userMessage) {
+//   console.log("userMessage", userMessage);
+//   // ------------sendMessage---------------------
+//   const typeMessage = document.createElement("div");
+//   typeMessage.className = "typemessage-container";
+//   typeMessage.innerHTML = `<div class="typemessage-content">${userMessage}</div><div class="chatbot-type-icon"><img src="./images/chatbot-use-icon.png" alt="message-cion"></div>`;
+//   chatbotContent.appendChild(typeMessage);
 
-  // ------------animted-dotte-loader------------------
-  const animatedDotte = document.createElement("div");
-  animatedDotte.className = "animated-dotte-container";
-  animatedDotte.innerHTML = `<div class="dotte"></div> <div class="dotte dotte-two"></div> <div class="dotte"></div>`;
-  chatbotContent.appendChild(animatedDotte);
-  setTimeout(() => {
-    animatedDotte.style.display = "none";
-    getReply(userMessage);
-    chatbotInput.value = "";
-  }, 1000);
-}
+//   // ------------animted-dotte-loader------------------
+//   const animatedDotte = document.createElement("div");
+//   animatedDotte.className = "animated-dotte-container";
+//   animatedDotte.innerHTML = `<div class="dotte"></div> <div class="dotte dotte-two"></div> <div class="dotte"></div>`;
+//   chatbotContent.appendChild(animatedDotte);
+//   setTimeout(() => {
+//     animatedDotte.style.display = "none";
+//     getReply(userMessage);
+//     chatbotInput.value = "";
+//   }, 1000);
+// }
 
 function getReply(userMessage) {
   const replyMessageContainer = document.createElement("div");
@@ -128,46 +129,8 @@ function serviceTab() {
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content">We offer expertise across several key areas. Which area interests you the most? 
-Options(Only the bulleted section name to be mentioned at the start, and when the user clicks on any service, it shows a brief detail about the service) 
- <div class="dropdown">
-  <button class="border-0 rounded-1" dropdown-toggle " type="button" id="dropdownMenuButton1" onclick="serviceDetailsTabShow()">
-   Services
-  </button>
-  
-</div>`;
-
-    chatbotContent.appendChild(aboutTab);
-    chatbotContent.scrollTo({
-      top: chatbotContent.scrollHeight,
-      behavior: "smooth",
-    });
-  }, 1000);
-}
-
-function serviceDetailsTabShow() {
-  // ------------sendMessage---------------------
-  const typeMessage = document.createElement("div");
-  typeMessage.className = "typemessage-container";
-  typeMessage.innerHTML = `<div class="typemessage-content">All Services</div><div class="chatbot-type-icon"><img src="./images/chatbot-use-icon.png" alt="message-cion"></div>`;
-  chatbotContent.appendChild(typeMessage);
-  // ------------animted-dotte-loader------------------
-  const animatedDotte = document.createElement("div");
-  animatedDotte.className = "animated-dotte-container";
-  animatedDotte.innerHTML = `<div class="dotte"></div> <div class="dotte dotte-two"></div> <div class="dotte"></div>`;
-  chatbotContent.appendChild(animatedDotte);
-  chatbotContent.scrollTo({
-    top: chatbotContent.scrollHeight,
-    behavior: "smooth",
-  });
-
-  setTimeout(() => {
-    animatedDotte.style.display = "none";
-    const aboutTab = document.createElement("div");
-    aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `
-    <div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div>
-    <div class="reply-message-content"><p><b>Services:-</b></p>
- <table class="services-table" border="1" cellpadding="8" cellspacing="0">
+ <div><b>Services</b>
+ <table class="services-table mt-1" border="1" cellpadding="8" cellspacing="0">
   
   <tbody>
     <tr">
@@ -200,9 +163,9 @@ function serviceDetailsTabShow() {
     </tr>
   </tbody>
 </table>
+  
+</div>`;
 
-</div>
-`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -210,6 +173,73 @@ function serviceDetailsTabShow() {
     });
   }, 1000);
 }
+
+// function serviceDetailsTabShow() {
+//   // ------------sendMessage---------------------
+//   const typeMessage = document.createElement("div");
+//   typeMessage.className = "typemessage-container";
+//   typeMessage.innerHTML = `<div class="typemessage-content">All Services</div><div class="chatbot-type-icon"><img src="./images/chatbot-use-icon.png" alt="message-cion"></div>`;
+//   chatbotContent.appendChild(typeMessage);
+//   // ------------animted-dotte-loader------------------
+//   const animatedDotte = document.createElement("div");
+//   animatedDotte.className = "animated-dotte-container";
+//   animatedDotte.innerHTML = `<div class="dotte"></div> <div class="dotte dotte-two"></div> <div class="dotte"></div>`;
+//   chatbotContent.appendChild(animatedDotte);
+//   chatbotContent.scrollTo({
+//     top: chatbotContent.scrollHeight,
+//     behavior: "smooth",
+//   });
+
+//   setTimeout(() => {
+//     animatedDotte.style.display = "none";
+//     const aboutTab = document.createElement("div");
+//     aboutTab.className = "reply-message-container";
+//     aboutTab.innerHTML = `
+//     <div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div>
+//     <div class="reply-message-content"><p><b>Services:-</b></p>
+//  <table class="services-table" border="1" cellpadding="8" cellspacing="0">
+  
+//   <tbody>
+//     <tr">
+//       <td><a href="#" onclick="digitalInformation()">Digital Transformation</a></td>
+//       <td><a href="#" onclick="softwareDevelopmentTabShow()">Software Development</a></td>
+//     </tr>
+    
+//     <tr >
+//       <td ><a href="#" onclick="aiDataAnalyticsTabShow()">AI/ML & Data Analytics</a></td>
+//         <td><a href="#" onclick="roboticProcessAutomationTabShow()" >Robotic Process Automation</a></td>
+//     </tr>
+   
+//     <tr >
+//       <td><a href="#" onclick="blockchainTabShow()">Blockchain</a></td>
+//       <td><a href="#" onclick="geographicInformationSystemTabShow()">Geographic Information System (GIS)</a></td>
+//     </tr>
+   
+//     <tr >
+//       <td><a href="#" onclick="cybersecurityTabShow()">Cybersecurity</a></td>
+//       <td><a href="#" onclick="cloudTabShow()">Cloud</a></td>
+//     </tr>
+    
+//     <tr>
+//       <td><a href="#" onclick="ItConsultancyTabShow()">IT Consultancy</a></td>
+//        <td><a href="#" onclick="dataCenterTabShow()">Data Center</a></td>
+//     </tr>
+   
+//     <tr >
+//       <td colspan="2" ><a href="#" onclick="disasterEmergencyManagementTabShow()">Disaster/Emergency Management</a></td>
+//     </tr>
+//   </tbody>
+// </table>
+
+// </div>
+// `;
+//     chatbotContent.appendChild(aboutTab);
+//     chatbotContent.scrollTo({
+//       top: chatbotContent.scrollHeight,
+//       behavior: "smooth",
+//     });
+//   }, 1000);
+// }
 
 function digitalInformation() {
   // ------------sendMessage---------------------
@@ -230,7 +260,7 @@ function digitalInformation() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p><b>Digital Transformation :- </b> services involve partnering with clients to fundamentally rethink and rebuild business processes, culture, and customer experiences by integrating modern digital technologies. This is achieved through strategic consulting, modernization of legacy systems, adoption of Cloud and AI/ML, and implementing enterprise-wide solutions like ERP to streamline operations, enhance efficiency, and unlock new data-driven revenue streams.</P></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p><b>Digital Transformation</b> services involve partnering with clients to fundamentally rethink and rebuild business processes, culture, and customer experiences by integrating modern digital technologies. This is achieved through strategic consulting, modernization of legacy systems, adoption of Cloud and AI/ML, and implementing enterprise-wide solutions like ERP to streamline operations, enhance efficiency, and unlock new data-driven revenue streams.</P></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -376,7 +406,7 @@ function geographicInformationSystemTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="replay-message-content"><p><b>Geographic Information System (GIS)</b> services provide the tools and expertise to capture, manage, analyze, and visualize all types of location-based data. This involves developing custom mapping applications, integrating spatial data into enterprise systems (like utilities or logistics), and performing spatial analysis to enable location intelligence for improved decision-making in areas like asset tracking, urban planning, and resource management.</p></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p><b>Geographic Information System (GIS)</b> services provide the tools and expertise to capture, manage, analyze, and visualize all types of location-based data. This involves developing custom mapping applications, integrating spatial data into enterprise systems (like utilities or logistics), and performing spatial analysis to enable location intelligence for improved decision-making in areas like asset tracking, urban planning, and resource management.</p></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
