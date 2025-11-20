@@ -593,7 +593,34 @@ function IndustriesTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p class="m-0">We provide tailored solutions for multiple major industries. Which industry would you like to learn more about? </p><ol class="industries-list" type="circle"><li>Oil, Gas, and Power</li><li>Banking, Financial Services, and Insurance</li><li>Homeland Security and Defence</li><li>Transport and Logistics</li><li>Telecom</li><li>Healthcare</li><li>Agriculture</li><li>Education</li><li>Critical IT and Urban Infrastructure</li><li>Solid Waste Management</li></ol> </div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content">We provide tailored solutions for multiple major industries. Which industry would you like to learn more about?<div><b>Industries</b>  <table class="services-table" border="1" cellpadding="8" cellspacing="0">
+  <tbody>
+    <tr">
+      <td><a href="oil-gas-and-power">Oil, Gas, and Power</a></td>
+      <td><a href="banking-financial-services-and-insurance">Banking, Financial Services, and Insurance</a></td>
+    </tr>
+    
+    <tr >
+      <td ><a href="homeland-security-and-defense">Homeland Security and Defence</a></td>
+        <td><a href="transport-and-logistics">Transport and Logistics</a></td>
+    </tr>
+   
+    <tr >
+      <td><a href="telecom">Telecom</a></td>
+      <td><a href="healthcare">Healthcare</a></td>
+    </tr>
+   
+    <tr >
+      <td><a href="agriculture">Agriculture</a></td>
+      <td><a href="education">Education</a></td>
+    </tr>
+    
+    <tr>
+      <td><a href="hrefcritical-it-and-urban-infrastructure">Critical IT and Urban Infrastructure</a></td>
+       <td><a href="#">Solid Waste Management</a></td>
+    </tr>
+  </tbody>
+</table></div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,

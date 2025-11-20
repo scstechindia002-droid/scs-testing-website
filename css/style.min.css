@@ -10984,9 +10984,16 @@ max-width: unset;
 .services-table a {
   color: #000000;
 }
-.services-table a:hover, .chatbot-links:hover {
+.services-table a:hover{
   color: rgb(255, 69, 70);
 }
+.chatbot-links{
+    text-decoration: underline;
+}
+.chatbot-links:hover{
+    text-decoration: underline;
+     color: rgb(255, 69, 70);
+} 
 
 @media screen and (max-width: 768px) {
   body{
