@@ -10954,6 +10954,9 @@ max-width: unset;
 .animated-dotte-container .dotte-two {
   animation: up-Down 0.5s infinite alternate linear;
 }
+.industries-list{
+    margin-top: 10px;
+}
 @keyframes up-Down {
   0% {
     transform: translateY(0px);

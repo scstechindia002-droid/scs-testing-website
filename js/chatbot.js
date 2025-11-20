@@ -78,7 +78,7 @@ chatbotCloseBtn.addEventListener("click", () => {
 function getReply(userMessage) {
   const replyMessageContainer = document.createElement("div");
   replyMessageContainer.className = "reply-message-container";
-  replyMessageContainer.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content">Hello! Welcome to SCS Tech India. How may I help you?<div class="chatbot-details-btn-container"><button  class="border-0 rounded-1" onclick="aboutBtn()">About Us </button> <button class="border-0 rounded-1" onclick="serviceTab()">Services </button> <button  class="border-0 rounded-1" onclick="IndustriesTabShow()">Industries</button> <button  class="border-0 rounded-1" onclick="productDiscussionTabShow()">Products</button> <button  class="border-0 rounded-1" >Careers</button></div></div>`;
+  replyMessageContainer.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content">Hello! Welcome to SCS Tech India. How may I help you?<div class="chatbot-details-btn-container"><button  class="border-0 rounded-1" onclick="aboutBtn()">About Us </button> <button class="border-0 rounded-1" onclick="serviceTab()">Services </button> <button  class="border-0 rounded-1" onclick="IndustriesTabShow()">Industries</button> <button  class="border-0 rounded-1" onclick="productDiscussionTabShow()">Products</button> <button  class="border-0 rounded-1" onclick="careersShow()">Careers</button></div></div>`;
   chatbotContent.appendChild(replyMessageContainer);
 }
 
@@ -593,7 +593,7 @@ function IndustriesTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p>We provide tailored solutions for multiple major industries. Which industry would you like to learn more about? </p><ol type="circle"><li>Oil, Gas, and Power</li><li>Banking, Financial Services, and Insurance</li><li>Homeland Security and Defence</li><li>Transport and Logistics</li><li>Telecom</li><li>Healthcare</li><li>Agriculture</li><li>Education</li><li>Critical IT and Urban Infrastructure</li><li>Solid Waste Management</li></ol> </div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="./images/messsage-chatbot-red-icon.png" alt="message-cion"></div><div class="reply-message-content"><p class="m-0">We provide tailored solutions for multiple major industries. Which industry would you like to learn more about? </p><ol class="industries-list" type="circle"><li>Oil, Gas, and Power</li><li>Banking, Financial Services, and Insurance</li><li>Homeland Security and Defence</li><li>Transport and Logistics</li><li>Telecom</li><li>Healthcare</li><li>Agriculture</li><li>Education</li><li>Critical IT and Urban Infrastructure</li><li>Solid Waste Management</li></ol> </div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -867,4 +867,8 @@ function projectManagementSystemTabShow() {
       behavior: "smooth",
     });
   }, 1000);
+}
+
+function careersShow(){
+    window.location.href = 'career';
 }
