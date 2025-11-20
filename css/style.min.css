@@ -10984,7 +10984,7 @@ max-width: unset;
 .services-table a {
   color: #000000;
 }
-.services-table a:hover {
+.services-table a:hover, .chatbot-links:hover {
   color: rgb(255, 69, 70);
 }
 
