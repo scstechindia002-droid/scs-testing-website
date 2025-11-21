@@ -10751,9 +10751,13 @@ height: 600px;
 body.appear-animate{
     transform: unset;
 } 
+.chatbot-btn-container h6{
+color: #ff4545;
+margin-bottom: 10px;
+}
 .chatbot-btn-container {
   position: fixed;
-  bottom: 30px;
+  bottom: 60px !important;
   right: 30px;
   display: flex;
   align-items: center;
@@ -10761,6 +10765,7 @@ body.appear-animate{
   flex-direction: column;
   color: rgb(255, 255, 255);
   z-index: 999;
+  
 }
 .chatbot-show-btn {
   width: 60px;
@@ -10771,6 +10776,7 @@ body.appear-animate{
   background-color: #ffffff;
   border-radius: 30px;
   cursor: pointer;
+  border: 1px solid #ff4545;
 }
 
 .chatbot-show-btn img {
@@ -10986,7 +10992,7 @@ max-width: unset;
             font-size: 16px;
         }
         .chatbot-content{
-            height: 284px;
+            height: 300px;
         }
         .chatbot-details-btn-container button {
                padding: 6px;
