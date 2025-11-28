@@ -566,14 +566,11 @@
                     <section class="small-section  pb-10">
                     </section>
                     <!-- --------------------------chatbot------------------------- -->
-                       <!-- -----------------------chatbot-page------------------------------------- -->
                    <section class="page-padding">
         <div class="container">
           <div class="chatbot-btn-container">
-            <h6>Ask Probot</h6>
             <div class="chatbot-show-btn" data-bs-label="chatbot-show-btn" id="chatbot-show-btn" style="display: none;">
               <img src="images/message-chatbot-icon2.png" alt="message-icon">
-            
           </div>
           <div class="chatbot-container" id="chatbot-container" style="display: block;">
             <div class="chatbot-container">
@@ -582,7 +579,7 @@
                  <span class="chatbot-header-icon">
                    <img src="images/message-chatbot-icon2.png" width="28" height="28" alt="message-icon">
                  </span>
-                  <p>I am Probot, your digital assistant.</p>
+                  <p>I am Nexus.</p>
                 </div>
                 <div class="chatbot-close-btn">
                   <img src="images/chatbot-close-icon.png" alt="chatbot-close-btn-img" width="24" height="24" id="chatbot-close-btn">
@@ -590,9 +587,9 @@
               </div>
               <div class="chatbot-content" id="chatbot-content"></div>
               <div class="chatbot-input-container">
-                <!-- <input type="text" class="form-control mb-0" id="chatbot-message" placeholder="type message..." onchange="chatbotMessage()"> -->
                 <div class="back-btn">
-                  <button onclick="mainMenu()" >Back</button>
+                 <button onclick="mainMenu()" >Main Menu</button>
+                   <button id="backBtn" onclick="backBtn(this)">Back</button>
                 </div>
               </div>
             </div>
