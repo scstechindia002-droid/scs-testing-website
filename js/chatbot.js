@@ -229,7 +229,7 @@ function digitalInformation() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="digital-transformation">Digital Transformation</a></b> services involve partnering with clients to fundamentally rethink and rebuild business processes, culture, and customer experiences by integrating modern digital technologies. This is achieved through strategic consulting, modernization of legacy systems, adoption of Cloud and AI/ML, and implementing enterprise-wide solutions like ERP to streamline operations, enhance efficiency, and unlock new data-driven revenue streams.</P></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="digital-transformation" target="_blank">Digital Transformation</a></b> services involve partnering with clients to fundamentally rethink and rebuild business processes, culture, and customer experiences by integrating modern digital technologies. This is achieved through strategic consulting, modernization of legacy systems, adoption of Cloud and AI/ML, and implementing enterprise-wide solutions like ERP to streamline operations, enhance efficiency, and unlock new data-driven revenue streams.</P></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -264,7 +264,7 @@ function softwareDevelopmentTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="software-development">Software Development</a></b> services cover the entire lifecycle of creating bespoke digital solutions, from initial requirements analysis and UX/UI design to coding, testing, deployment, and ongoing maintenance. Offerings typically include developing custom enterprise applications, mobile apps, web portals, and integrating systems to ensure a solution is highly functional, scalable, secure, and perfectly aligns with unique business needs.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="software-development" target="_blank">Software Development</a></b> services cover the entire lifecycle of creating bespoke digital solutions, from initial requirements analysis and UX/UI design to coding, testing, deployment, and ongoing maintenance. Offerings typically include developing custom enterprise applications, mobile apps, web portals, and integrating systems to ensure a solution is highly functional, scalable, secure, and perfectly aligns with unique business needs.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -300,7 +300,7 @@ function aiDataAnalyticsTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics</a></b> services focus on helping organizations leverage their data assets to drive informed decision-making. This includes implementing advanced analytics platforms, building predictive models using Machine Learning (ML), developing Artificial Intelligence (AI) solutions like chatbots or smart automation, and providing Business Intelligence (BI) dashboards for actionable insights, transforming raw data into strategic foresight.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="ai-ml-and-data-analytics-services" target="_blank">AI/ML & Data Analytics</a></b> services focus on helping organizations leverage their data assets to drive informed decision-making. This includes implementing advanced analytics platforms, building predictive models using Machine Learning (ML), developing Artificial Intelligence (AI) solutions like chatbots or smart automation, and providing Business Intelligence (BI) dashboards for actionable insights, transforming raw data into strategic foresight.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -335,7 +335,7 @@ function roboticProcessAutomationTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="robotic-process-automation">Robotic Process Automation (RPA)</a></b> involves using software 'robots' to automate high-volume, repetitive, rule-based tasks across various business functions, such as data entry, form processing, and system integration. RPA services include process discovery, bot development, deployment, and governance to minimize human error, significantly reduce operational costs, and free up employees for more strategic, high-value work.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a class="chatbot-links" href="robotic-process-automation" target="_blank">Robotic Process Automation (RPA)</a></b> involves using software 'robots' to automate high-volume, repetitive, rule-based tasks across various business functions, such as data entry, form processing, and system integration. RPA services include process discovery, bot development, deployment, and governance to minimize human error, significantly reduce operational costs, and free up employees for more strategic, high-value work.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -380,7 +380,7 @@ function blockchainTabShow() {
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `
       <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content">
-        <p><b><a href="blockchain" class="chatbot-links">Blockchain</a></b> services assist businesses in adopting distributed ledger technology (DLT) 
+        <p><b><a href="blockchain" target="_blank" class="chatbot-links">Blockchain</a></b> services assist businesses in adopting distributed ledger technology (DLT) 
         to create secure, transparent, and immutable records...</p>
       </div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
@@ -420,7 +420,7 @@ function geographicInformationSystemTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="geographic-information-system-gis" class="chatbot-links">Geographic Information System (GIS)</a></b> services provide the tools and expertise to capture, manage, analyze, and visualize all types of location-based data. This involves developing custom mapping applications, integrating spatial data into enterprise systems (like utilities or logistics), and performing spatial analysis to enable location intelligence for improved decision-making in areas like asset tracking, urban planning, and resource management.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="geographic-information-system-gis" target="_blank" class="chatbot-links">Geographic Information System (GIS)</a></b> services provide the tools and expertise to capture, manage, analyze, and visualize all types of location-based data. This involves developing custom mapping applications, integrating spatial data into enterprise systems (like utilities or logistics), and performing spatial analysis to enable location intelligence for improved decision-making in areas like asset tracking, urban planning, and resource management.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -456,7 +456,7 @@ function cybersecurityTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="cybersecurity" class="chatbot-links">Cybersecurity</a></b> services aim to protect an organization's systems, networks, and data from digital threats, ensuring confidentiality, integrity, and availability. Core offerings include risk assessments, vulnerability and penetration testing, 24/7 Managed Security Services (MSS), Incident Response planning, and implementing advanced solutions for threat detection, identity and access management (IAM), and regulatory compliance.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="cybersecurity" target="_blank" class="chatbot-links">Cybersecurity</a></b> services aim to protect an organization's systems, networks, and data from digital threats, ensuring confidentiality, integrity, and availability. Core offerings include risk assessments, vulnerability and penetration testing, 24/7 Managed Security Services (MSS), Incident Response planning, and implementing advanced solutions for threat detection, identity and access management (IAM), and regulatory compliance.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -492,7 +492,7 @@ function cloudTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="cloud" class="chatbot-links">Cloud</a></b> services involve providing expertise across the major cloud platforms (e.g., AWS, Azure, GCP) to manage compute, storage, and networking resources. Services encompass strategic Cloud migration and modernization, developing Cloud-native applications, optimizing performance and cost management (FinOps), and offering Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) solutions.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="cloud" target="_blank" class="chatbot-links">Cloud</a></b> services involve providing expertise across the major cloud platforms (e.g., AWS, Azure, GCP) to manage compute, storage, and networking resources. Services encompass strategic Cloud migration and modernization, developing Cloud-native applications, optimizing performance and cost management (FinOps), and offering Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) solutions.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -525,7 +525,7 @@ function ItConsultancyTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="it-consultancy" class="chatbot-links">IT Consultancy</a></b> provides expert advisory services to guide businesses on technology strategy, architecture, and implementation to achieve specific business goals. Consultants conduct comprehensive technology assessments, develop long-term IT roadmaps, help with vendor and platform selection, and manage complex technology projects to ensure alignment between IT investments and overall corporate strategy.</p></div><div class="type-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="it-consultancy" target="_blank" class="chatbot-links">IT Consultancy</a></b> provides expert advisory services to guide businesses on technology strategy, architecture, and implementation to achieve specific business goals. Consultants conduct comprehensive technology assessments, develop long-term IT roadmaps, help with vendor and platform selection, and manage complex technology projects to ensure alignment between IT investments and overall corporate strategy.</p></div><div class="type-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -565,7 +565,7 @@ function dataCenterTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="data-center-services" class="chatbot-links">Data Center</a></b> services focus on designing, building, managing, and maintaining the physical and virtual infrastructure required to host and operate critical IT applications and data. This includes providing solutions for server and storage hardware, network infrastructure, virtualization, power and cooling management, and offering co-location, hosting, or fully managed services for maximum uptime and operational efficiency.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="data-center-services" target="_blank" class="chatbot-links">Data Center</a></b> services focus on designing, building, managing, and maintaining the physical and virtual infrastructure required to host and operate critical IT applications and data. This includes providing solutions for server and storage hardware, network infrastructure, virtualization, power and cooling management, and offering co-location, hosting, or fully managed services for maximum uptime and operational efficiency.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
@@ -601,7 +601,7 @@ function disasterEmergencyManagementTabShow() {
     animatedDotte.style.display = "none";
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
-    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="disaster-emergency-services" class="chatbot-links">Disaster/Emergency Management</a></b> services, often termed Business Continuity and Disaster Recovery (BCDR), involve creating plans and implementing systems to ensure an organization can quickly resume mission-critical functions after a disruptive event. This covers planning, risk assessment, data backup and recovery solutions, establishing secondary failover sites, and conducting regular testing to minimize downtime and data loss.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
+    aboutTab.innerHTML = `<div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div><div><div class="reply-message-content"><p><b><a href="disaster-emergency-services" target="_blank" class="chatbot-links">Disaster/Emergency Management</a></b> services, often termed Business Continuity and Disaster Recovery (BCDR), involve creating plans and implementing systems to ensure an organization can quickly resume mission-critical functions after a disruptive event. This covers planning, risk assessment, data backup and recovery solutions, establishing secondary failover sites, and conducting regular testing to minimize downtime and data loss.</p></div><div class="reply-message-time">${currentMessageTime}</div></div>`;
     chatbotContent.appendChild(aboutTab);
     chatbotContent.scrollTo({
       top: chatbotContent.scrollHeight,
