@@ -11055,6 +11055,79 @@ body.appear-animate {
   color: rgb(255, 69, 70);
 }
 
+/* ---------------------footer------------------ */
+.footer-container{
+    background-color: #232323;
+    color: #ffffff;
+    padding: 20px 10px;
+}
+
+.footer-logo{
+    display: flex;
+    align-self: start;
+    justify-content: center;
+    padding: 0px 0px;
+}
+.footer-logo img{
+    width: 150px;
+} 
+.footer-content h5 {
+    position: relative;
+    display: inline-block; 
+}
+
+.footer-content h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 4px;
+    width: 50%;          
+    background-color: #e64f24;
+    border-radius: 30px;
+    transform-origin: left;
+}
+
+.footer-links{
+    padding: 8px 0px;
+}
+
+.footer-links ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+  
+}
+.footer-links ul li{
+    list-style: none;
+    margin-left: 0px;
+    margin-bottom: 6px;
+}
+.footer-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-links ul li a:hover{
+    color: #e64f24;
+}
+
+.social-connecting-icon{
+    display: flex;
+    gap: 15px;
+}
+.footer-left-text{
+    color: #ffffff;
+    text-align: left;
+}
+.footer-right-text{
+    text-align: right;
+}
+.footer-disclaimer-privacy-text{
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+}
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -11074,6 +11147,9 @@ body.appear-animate {
   .chatbot-details-btn-container button,
   #dropdownMenuButton1 {
     padding: 6px 10px;
+  }
+  .footer-disclaimer-privacy-text{
+    justify-content: start;
   }
 }
 
