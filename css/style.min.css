@@ -11151,6 +11151,9 @@ body.appear-animate {
   .footer-disclaimer-privacy-text{
     justify-content: start;
   }
+  .social-icons{
+    justify-content: start !important;
+  }
 }
 
 .chatbot-sagation-message{
