@@ -11074,6 +11074,7 @@ body.appear-animate {
 .footer-content h4 {
     position: relative;
     display: inline-block; 
+    margin-bottom: 20px;
 }
 
 .footer-content h4::after {
@@ -11083,7 +11084,7 @@ body.appear-animate {
     bottom: -10px;
     height: 4px;
     width: 50%;          
-    background-color: #e64f24;
+    background-color: #ff0002;
     border-radius: 30px;
     transform-origin: left;
 }
@@ -11108,7 +11109,7 @@ body.appear-animate {
 }
 
 .footer-links ul li a:hover{
-    color: #e64f24;
+    color: #ff0002;
 }
 
 .social-connecting-icon{
