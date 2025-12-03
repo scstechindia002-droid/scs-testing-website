@@ -11071,13 +11071,14 @@ body.appear-animate {
 .footer-logo img{
     width: 150px;
 } 
-.footer-content h4 {
+.footer-content .footer-title {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
-.footer-content h4::after {
+.footer-content .footer-title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -11128,6 +11129,7 @@ body.appear-animate {
     justify-content: end;
     gap: 35px;
 }
+
 
 @media screen and (max-width: 768px) {
   body {
