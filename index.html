@@ -67,6 +67,11 @@
         <link rel="preload" as="image" href="images/slider-1.webp" fetchpriority="high">
          <!-- ------------------------font-awesome-icon------ -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       <!-- -------------new-owl-slider-css------------- -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0"></script><script>
@@ -401,19 +406,15 @@
             <main>
             <!-- Home Section -->
             <!-- Fullwidth Slider -->
-            <div class="home-section fullwidth-slider bg-dark" id="home">
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll fixed-height-medium bg-position bg-dark-alfa-30">
-                    <img 
-    src="images/slider-1.webp" 
-    alt="Redefining Possibilities" 
-    fetchpriority="high" 
-    decoding="async" 
-    width="1920" height="1080"
-    style="object-fit: cover; width: 100%; height: 100%; position: absolute; inset: 0; z-index: -1;"
-  >
-                    <div class="js-height-parent container">
-                        <div class="home-content">
+             <div class="home-section fullwidth-slider bg-dark">
+    <div class="owl-carousel">
+
+    <!-- Slide 1 -->
+    <div class="slide-item">
+      <img loading="lazy" src="https://www.scstechindia.com/images/slider-1.webp" alt="img">
+      <div class="slide-overlay"></div>
+      <div class="js-height-parent container">
+         <div class="home-content">
                             <div class="home-text">
                                 <div class="row">
                                     <div class="col-md-11">
@@ -444,12 +445,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll fixed-height-medium bg-dark-alfa-30" data-background="images/slider_02.webp">
-                    <div class="js-height-parent container">
-                        <div class="home-content">
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-item">
+      <img loading="lazy" src="https://www.scstechindia.com/images/slider_02.webp" alt="img">
+      <div class="slide-overlay"></div>
+     <div class="container">
+       <div class="js-height-parent container">
+         <div class="home-content">
                             <div class="home-text">
                                 <div class="row">
                                     <div class="col-md-11">
@@ -481,12 +486,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll fixed-height-medium bg-dark-alfa-30" data-background="images/slider3.webp">
-                    <div class="js-height-parent container">
-                        <div class="home-content">
+       </div>
+     </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-item">
+      <img loading="lazy" src="https://www.scstechindia.com/images/slider3.webp" alt="img">
+      <div class="slide-overlay"></div>
+    <div class="js-height-parent container">
+         <div class="home-content">
                             <div class="home-text">
                                 <div class="row">
                                     <div class="col-md-11">
@@ -514,12 +523,15 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Slide Item -->
-                <section class="home-section bg-scroll fixed-height-medium bg-dark-alfa-30" data-background="images/slider4.webp">
-                    <div class="js-height-parent container">
-                        <div class="home-content">
+    </div>
+    </div>
+
+    <!-- -----------------slider-4-------------------------------- -->
+    <div class="slide-item">
+      <img src="https://www.scstechindia.com/images/slider4.webp" alt="">
+      <div class="slide-overlay"></div>
+  <div class="js-height-parent container">
+      <div class="home-content">
                             <div class="home-text">
                                 <div class="row">                                   
                                     <div class="col-md-11">
@@ -548,9 +560,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-            </div>
+  </div>
+    </div>
+
+  </div>
+  </div>
             <!-- Empty Section -->
             <div class="small-section  pb-10">
                 <div class="container1 relative text-start">
@@ -1191,7 +1205,14 @@
         <script type="text/javascript" src="js/blog.js" defer></script>      
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script type="text/javascript" src="js/nav.js" defer></script>  
-        <script async type="text/javascript" src="js/chatbot.js"></script> 
+        <script async type="text/javascript" src="js/chatbot.js"></script>
+        
+        <!-- -------------new-owl-slider-css------------- -->
+         <!-- jQuery -->
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <!-- Owl Carousel JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 emailjs.init("A_ZezMTqeXrN53cdS"); // Replace with your EmailJS public key
@@ -1347,5 +1368,17 @@ window.addEventListener('scroll', loadAnalytics, { once: true });
   }
 });
 </script>
+<script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 0,            // 🔥 No margin
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000
+      });
+    });
+  </script>
     </body>
 </html>
