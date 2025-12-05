@@ -1217,11 +1217,10 @@ a.btn-mod:hover {
 }
 .home-content {
     display: table;
-    text-align: left;
-    position: absolute;
-    bottom: 50px;
     width: 100%;
     height: 100%;
+    text-align: left;
+    position: relative;
 }
 .home-text {
     display: table-cell;
@@ -11158,10 +11157,6 @@ body.appear-animate {
   .social-icons{
     justify-content: start !important;
   }
-  .home-content{
-    display: unset;
-    top: 20% ;
-  }
 }
 
 .chatbot-sagation-message{
@@ -11170,32 +11165,3 @@ body.appear-animate {
 .reply-message-content{
   margin-bottom: 4px;
 }
-
-
-      /* Full screen slide container */
-      .slide-item {
-        position: relative;
-        height: 100vh; /* Full screen height */
-        width: 100%;
-        overflow: hidden;
-      }
-
-      /* Full screen background image */
-      .slide-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /* Dark overlay */
-      .slide-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.4);
-      }
-
-    
-      
