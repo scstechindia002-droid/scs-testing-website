@@ -11401,6 +11401,22 @@ height: 300px;
 .Why-Choose-section .product-feature-title{
     font-weight: 500;
 }
+ .power-theft-usually-section .product-feature-card{
+        margin-bottom: 0px;
+    }
+    .power-theft-usually-section .electric-pol-img{
+            height: 524px;
+            margin-bottom: 16px;
+    }
+@media screen and (max-width:1366px) {
+    .power-theft-usually-section .product-feature-card{
+        margin-bottom: 0px;
+    }
+   .power-theft-usually-section .electric-pol-img{
+            height: 543px;
+               margin-bottom: 16px;
+    }
+}
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
     display: block;
@@ -11429,6 +11445,9 @@ height: 300px;
   }
   .data-security-compliance-mobile-view{
     display: flex;
+  }
+  .Benefits-section-ai-copilot-page .card{
+margin-bottom: 10px;
   }
 
 }
