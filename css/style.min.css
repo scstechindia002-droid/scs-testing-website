@@ -11056,10 +11056,15 @@ body.appear-animate {
 }
 
 /* -----------------------new-product-page-css------------------------ */
-.key-features .card-footer, .card-header , .btn-link, .btn-link:hover{
-background-color: #FF4545;
+.key-features .card-footer, .card-header, .btn-link, .btn:hover{
+background-color: #323232;
 color: #ffffff;
 text-decoration: none;
+}
+
+.key-features .btn-link:not(.collapsed) .bi-chevron-down {
+    background-color: #ffffff;
+    color: #000000;
 }
 .key-features .btn-link:focus{
 box-shadow: none;
@@ -11079,6 +11084,8 @@ justify-content: space-between;
 align-items: center;
 width: 100%;
 text-decoration: none;
+color: #ffffff;
+border-radius: 0px;
 }
 
 /* Rotate arrow when collapsed */
@@ -11141,6 +11148,43 @@ background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
   height: 30px;
   border-radius: 50%;
 }
+
+.Benefits-section p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.Benefits-section-ai-copilot-page p{
+    color: #FF7E7E;
+} 
+.Benefits-section-ai-copilot-page .card:hover p {
+    color: #ffffff;
+}
+.Benefits-section-ai-copilot-page .card{
+height: 100%;
+}
+.key-features .btn-link{
+    padding: 24px 30px;
+    background-color: #FF4545;
+}
+
+.key-features .collapsed{
+    background-color: #323232 !important;
+}
+
+.key-features .btn i{
+     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FF4545;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 .Why-Choose-section{
   background: linear-gradient(#000000, #492424);
   position: relative;
@@ -11226,7 +11270,7 @@ padding: 30px 0px;
 /* Text initially hidden */
 .product-overview-section .overlay h3,
 .product-overview-section .overlay p {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(20px); /* move text slightly down */
   transition: opacity 0.4s ease, transform 0.4s ease;
   margin: 0;
@@ -11306,16 +11350,7 @@ display: none;
 .theft-Identification-section .card:hover .card-hover-to-show  {
 display: block;
 }
-.key-features .btn i{
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .key-features .btn-link.collapsed i {
     transform: rotate(0deg);
 }
@@ -11351,6 +11386,9 @@ display: block;
 .data-security-compliance-desktop-view{
   width: 80%;
   margin: 0 auto;
+}
+.data-security-compliance-desktop-view p{
+    font-weight: 500;
 }
 .data-security-compliance-mobile-view{
   display: none;
