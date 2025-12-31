@@ -11055,6 +11055,384 @@ body.appear-animate {
   color: rgb(255, 69, 70);
 }
 
+/* -----------------------new-product-page-css------------------------ */
+.key-features .card-footer, .card-header , .btn-link, .btn-link:hover{
+background-color: #FF4545;
+color: #ffffff;
+text-decoration: none;
+}
+.key-features .btn-link:focus{
+box-shadow: none;
+text-decoration: none;
+}
+.key-features .card{
+margin-bottom: 5px;
+border: none;
+}
+.key-features .card-body{
+background-color:#1A1A1A; color: #ffffff;
+}
+
+.key-features .btn-link {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+text-decoration: none;
+}
+
+/* Rotate arrow when collapsed */
+.key-features .btn-link i {
+transition: transform 0.3s;
+}
+
+.key-features .btn-link.collapsed i {
+transform: rotate(-90deg);
+}
+.theft-Identification-section .card-container, .Benefits-section .card-container{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 30px;
+padding: 30px 0px;
+}
+.theft-Identification-section .card{
+background-color: transparent;
+border: 1px solid #FF4545;
+color: #ffffff;
+transition: all 0.3s linear;
+}
+.theft-Identification-section .card:hover{
+background-color: #FF4545;
+color: #ffffff;
+}
+.theft-Identification-section p, .Benefits-section p {
+padding: 16px 0px;
+text-align: center;
+}
+.Benefits-section .card-container{
+gap: 20px;
+}
+.Benefits-section  .card{
+width: 400px;
+background-color: #323232;
+color: #ffffff;
+transition: all 0.3s linear;
+border:none;
+}
+.Benefits-section-ai-copilot-page .card{
+    width: 100%;
+}
+
+.Benefits-section  .card:hover{
+background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
+}
+.Benefits-section  .card .check-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FF4545;
+}
+.Benefits-section  .card img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.Why-Choose-section{
+  background: linear-gradient(#000000, #492424);
+  position: relative;
+}
+.Why-Choose-section .dooted-h-line{
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+}
+.Why-Choose-section .dooted-h-line img{
+  height: 300px;
+  width: 100%;
+}
+.Why-Choose-section .card-container{
+  display: flex;
+padding: 30px 0px;
+}
+.Why-Choose-section .card-container .card{
+  background-color: #323232;
+  width: 400px;
+    border-radius: 0px ;
+}
+.Why-Choose-section .card-container .card:first-child{
+  border-radius: 32px 0px 0px 32px;
+}
+.Why-Choose-section .card-container .card:last-child{
+  border-radius: 0px 32px 32px 0px;
+}
+.Why-Choose-section .card-container .card img{
+  width: 46px;
+  height:46px;
+  margin-bottom: 20px;
+}
+
+ .product-overview-section  .slider-container {
+  width: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.product-overview-section .slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.product-overview-section .slider {
+  display: flex;
+  transition: transform 0.4s ease;
+  gap: 10px; /* spacing between slides */
+}
+
+.product-overview-section .slide {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-overview-section .slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.product-overview-section .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* full height */
+ 
+  transform: translateY(100%); /* hide below */
+  transition: transform 0.4s ease, background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 100px 15px;
+  color: #fff;
+}
+
+/* Text initially hidden */
+.product-overview-section .overlay h3,
+.product-overview-section .overlay p {
+  opacity: 0;
+  transform: translateY(20px); /* move text slightly down */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin: 0;
+}
+
+/* Hover effect: text fades in and moves up */
+ .product-overview-section .slide:hover .overlay h3,
+ .product-overview-section .slide:hover .overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.product-overview-section .slider-1:hover .overlay{
+background: linear-gradient(to top, #4D9DCF, #0B234C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-2:hover .overlay{
+background: linear-gradient(to top, #995725, #2A2118);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-3:hover .overlay{
+background: linear-gradient(to top, #677673, #222126);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-4:hover .overlay{
+background: linear-gradient(to top, #06548C, #04061C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-5:hover .overlay{
+background: linear-gradient(to top, #1C2B48, #050506);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+ .product-overview-section .slider-6:hover .overlay{
+background: linear-gradient(to top, #553539, #160A0A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-7:hover .overlay{
+background: linear-gradient(to top, #553539, #160A0A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-8:hover .overlay{
+background: linear-gradient(to top, #11337E, #0D1D3C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-overview-section .slider-9:hover .overlay{
+background: linear-gradient(to top, #10283A, #0A1B1A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.product-feature-card ul{
+    padding: 0px 18px;
+}
+.product-feature-card li , .product-feature-card  a{
+    color: #ffffff;
+}
+.theft-Identification-section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+} 
+.theft-Identification-section .card:hover .card-hover-to-hide  {
+display: none;
+}
+.theft-Identification-section .images .card-hover-to-show{
+  display: none;
+}
+.theft-Identification-section .card:hover .card-hover-to-show  {
+display: block;
+}
+.key-features .btn i{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.key-features .btn-link.collapsed i {
+    transform: rotate(0deg);
+}
+.key-features .bi-chevron-down{
+  transform: rotate(180deg);
+}
+
+.product-overview-section .nav-wrapper {
+  position: absolute;
+  bottom: -60px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.product-overview-section .nav {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background:#ffffff;
+  color: #000000;
+}
+
+.product-overview-section .nav:hover {
+  background: #FF4545;
+} 
+.data-security-compliance-section img{
+  width: 100%;
+}
+.data-security-compliance-desktop-view{
+  width: 80%;
+  margin: 0 auto;
+}
+.data-security-compliance-mobile-view{
+  display: none;
+  justify-content: space-between;
+position: relative;
+height: 300px;
+}
+.data-security-compliance-mobile-view .image{
+  display: contents;
+  position: absolute;
+  top: 30%;
+}
+.data-security-compliance-mobile-view img{
+  margin: 0 auto;
+  width: auto;
+}
+.data-security-compliance-mobile-view .left-text {
+   width: 120px;
+  position: absolute;
+  top: 32%;
+  left: 0;
+  text-align: left;
+}
+
+.data-security-compliance-mobile-view .left-text2 {
+  width: 120px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  text-align: left;
+}
+
+.data-security-compliance-mobile-view .right-text{
+   width: 120px;
+  position: absolute;
+  top: 0px;
+  right: -14px;
+  text-align: left;
+}
+.data-security-compliance-mobile-view .right-text2 {
+   width: 120px;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  text-align: left;
+}
+
+.Why-Choose-section .product-feature-title{
+    font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .Why-Choose-section .card-container{
+    display: block;
+  }
+   .Why-Choose-section .card-container .card{
+    width: auto;
+   }
+  .Why-Choose-section .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Why-Choose-section .card-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     .Why-Choose-section .card-container .card:first-child{
+  border-radius: 32px 32px 0px 0px;
+}
+.Why-Choose-section .card-container .card:last-child{
+  border-radius: 0px 0px 32px 32px;
+}
+  .data-security-compliance-desktop-view{
+    display: none;
+  }
+  .data-security-compliance-mobile-view{
+    display: flex;
+  }
+
+}
+
 /* ---------------------footer------------------ */
 .footer-container{
     background-color: #232323;
