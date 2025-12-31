@@ -11416,6 +11416,9 @@ height: 300px;
             height: 543px;
                margin-bottom: 16px;
     }
+    .urban-fire-safety-img{
+        height: 100% !important;
+    }
 }
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
@@ -11449,7 +11452,9 @@ height: 300px;
   .Benefits-section-ai-copilot-page .card{
 margin-bottom: 10px;
   }
-
+ .urban-fire-safety-img{
+    margin-top: 10px;
+ }
 }
 
 /* ---------------------footer------------------ */
