@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="canonical" href="https://www.scstechindia.com/intelligent-debriefing-with-analytics-ida" />
+    <title>Intelligent Theft Detection System for Power Utilities</title>
+  <meta name="description" content="Streamline debrief workflows with SCS Tech’s IDA platform—powered by AI/ML service, GIS mapping services, incident management software, and digital transformation.">
+  
+        <meta name="keywords" content="Digital Transformation, IT, Information Technology, Digital Innovation, IT Information, Digital, Technology, Bussiness Analytics, New Tech">
+        <meta charset="utf-8">
+        <meta name="author" content="SCS Tech">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        
+         <!-- Favicons -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        </noscript>
+
+        <link rel="shortcut icon" href="images/favicon.png">
+        <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous" async></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <!-- <link rel="stylesheet" href="css/style-responsive.css"> -->
+            <link rel="preload" href="css/style-responsive.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/style-responsive.css"></noscript>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" /> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"></noscript>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"></noscript>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+         <link rel="preload" href="css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/animate.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/verticals.min.css"> -->
+         <link rel="preload" href="css/verticals.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/verticals.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+         <link rel="preload" href="css/owl.carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/owl.carousel.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/magnific-popup.css">     -->
+         <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/magnific-popup.css"></noscript>
+ 
+        <!-- In <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+ <!-- ------------------------font-awesome-icon------ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <style>
+                .key-features .card-footer, .card-header , .btn-link, .btn-link:hover{
+                 background-color: #FF4545;
+                 color: #ffffff;
+                 text-decoration: none;
+
+                }
+                .key-features .btn-link:focus{
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+                .key-features .card{
+                    margin-bottom: 5px;
+                    border: none;
+                }
+                .key-features .card-body{
+                 background-color:#1A1A1A; color: #ffffff;
+                }
+
+    .btn-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    /* Rotate arrow when collapsed */
+    .btn-link i {
+      transition: transform 0.3s;
+    }
+
+    .btn-link.collapsed i {
+      transform: rotate(-90deg);
+    }
+    .theft-Identification-section .card-container, .Benefits-section .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px 0px;
+    }
+.theft-Identification-section .card{
+    background-color: transparent;
+    border: 1px solid #FF4545;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+.theft-Identification-section .card:hover{
+background-color: #FF4545;
+color: #ffffff;
+}
+.theft-Identification-section p, .Benefits-section p {
+    padding: 16px 0px;
+    text-align: center;
+}
+.Benefits-section .card-container{
+gap: 20px;
+}
+.Benefits-section  .card{
+   width: 400px;
+  background-color: #323232;
+  color: #ffffff;
+transition: all 0.3s linear;
+ border:none;
+}
+
+.Benefits-section  .card:hover{
+background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
+}
+.Benefits-section  .card .check-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FF4545;
+}
+.Benefits-section  .card img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.Why-Choose-section{
+  background: linear-gradient(#000000, #492424);
+  position: relative;
+}
+.Why-Choose-section .dooted-h-line{
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+}
+.Why-Choose-section .dooted-h-line img{
+  height: 300px;
+  width: 100%;
+}
+.Why-Choose-section .card-container{
+  display: flex;
+padding: 30px 0px;
+}
+.Why-Choose-section .card-container .card{
+  background-color: #323232;
+  width: 400px;
+    border-radius: 0px ;
+}
+.Why-Choose-section .card-container .card:first-child{
+  border-radius: 32px 0px 0px 32px;
+}
+.Why-Choose-section .card-container .card:last-child{
+  border-radius: 0px 32px 32px 0px;
+}
+.Why-Choose-section .card-container .card img{
+  width: 46px;
+  height:46px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .Why-Choose-section .card-container{
+    display: block;
+  }
+   .Why-Choose-section .card-container .card{
+    width: auto;
+   }
+  .Why-Choose-section .card-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Why-Choose-section .card-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+     .Why-Choose-section .card-container .card:first-child{
+  border-radius: 32px 32px 0px 0px;
+}
+.Why-Choose-section .card-container .card:last-child{
+  border-radius: 0px 0px 32px 32px;
+}
+
+}
+ 
+
+  </style>
+  <style>
+.slider-container {
+  width: 100%;
+  margin: 60px auto;
+  position: relative;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.4s ease;
+  gap: 10px; /* spacing between slides */
+}
+
+.slide {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* full height */
+ 
+  transform: translateY(100%); /* hide below */
+  transition: transform 0.4s ease, background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 100px 15px;
+  color: #fff;
+}
+
+/* Text initially hidden */
+.overlay h3,
+.overlay p {
+  opacity: 0;
+  transform: translateY(20px); /* move text slightly down */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  margin: 0;
+}
+
+/* Hover effect: overlay slides up */
+
+
+/* Hover effect: text fades in and moves up */
+.slide:hover .overlay h3,
+.slide:hover .overlay p {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slider-1:hover .overlay{
+background: linear-gradient(to top, #4D9DCF, #0B234C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-2:hover .overlay{
+background: linear-gradient(to top, #995725, #2A2118);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-3:hover .overlay{
+background: linear-gradient(to top, #677673, #222126);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-4:hover .overlay{
+background: linear-gradient(to top, #06548C, #04061C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-5:hover .overlay{
+background: linear-gradient(to top, #1C2B48, #050506);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-6:hover .overlay{
+background: linear-gradient(to top, #553539, #160A0A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-7:hover .overlay{
+background: linear-gradient(to top, #553539, #160A0A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-8:hover .overlay{
+background: linear-gradient(to top, #11337E, #0D1D3C);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+.slider-9:hover .overlay{
+background: linear-gradient(to top, #10283A, #0A1B1A);
+ transform: translateY(0);
+ opacity: 0.7;
+}
+
+.theft-Identification-section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+} 
+.theft-Identification-section .card:hover .card-hover-to-hide  {
+display: none;
+}
+.theft-Identification-section .images .card-hover-to-show{
+  display: none;
+}
+.theft-Identification-section .card:hover .card-hover-to-show  {
+display: block;
+}
+.key-features .btn i{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.key-features .btn-link.collapsed i {
+    transform: rotate(0deg);
+}
+.key-features .bi-chevron-down{
+  transform: rotate(180deg);
+}
+
+ .nav-wrapper {
+  position: absolute;
+  bottom: -60px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.nav {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background:#ffffff;
+  color: #000000;
+}
+
+.nav:hover {
+  background: #FF4545;
+} 
+.data-security-compliance-section img{
+  width: 100%;
+}
+.data-security-compliance-desktop-view{
+  width: 80%;
+  margin: 0 auto;
+}
+.data-security-compliance-mobile-view{
+  display: none;
+  justify-content: space-between;
+position: relative;
+height: 300px;
+}
+.data-security-compliance-mobile-view .image{
+  display: contents;
+  position: absolute;
+  top: 30%;
+}
+.data-security-compliance-mobile-view img{
+  margin: 0 auto;
+  width: auto;
+}
+.data-security-compliance-mobile-view .left-text {
+   width: 120px;
+  position: absolute;
+  top: 32%;
+  left: 0;
+  text-align: left;
+}
+
+.data-security-compliance-mobile-view .left-text2 {
+  width: 120px;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  text-align: left;
+}
+
+.data-security-compliance-mobile-view .right-text{
+   width: 120px;
+  position: absolute;
+  top: 0px;
+  right: -14px;
+  text-align: left;
+}
+.data-security-compliance-mobile-view .right-text2 {
+   width: 120px;
+  position: absolute;
+  top: 50%;
+  right: -14px;
+  text-align: left;
+}
+@media screen and (max-width:768px) {
+  .data-security-compliance-desktop-view{
+    display: none;
+  }
+  .data-security-compliance-mobile-view{
+    display: flex;
+  }
+}
+</style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-215637589-1');
+</script>
+
+        
+    </head>
+<body class="appear-animate">
+     <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">
+                <!-- <img loading="lazy"  src="images/loader2.gif" alt="Logo" height="450" width="450"> -->
+                     <video autoplay loop muted playsinline height="75" width="75">
+  <source src="images/loader2.webm" type="video/webm">
+  <source src="images/loader2.webm" type="video/mp4">
+</video>
+            </div>
+        </div>
+
+        < class="page" id="top">
+<!-- Navigation panel -->
+             <nav class="navbar navbar-expand-lg dark stick-fixed">
+                <div class="container-fluid px-4">
+                    <!-- Logo -->
+                    <div class="nav-logo-wrap mt-2">
+                        <a class="navbar-brand" href="/">
+                                 <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="Logo" height="60" width="150">
+
+                        </a>
+                    </div>
+        
+                   <!-- Mobile Toggle -->
+                    <button class="navbar-toggler d-lg-none" type="button" aria-label="Open navigation menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+      
+                    <!-- Main Navigation -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                           <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu=who-we-are >Who we are</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="career" data-menu="careers">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Button -->
+                        <button type="submit"  class="btn-submit mt-2 btn d-none d-lg-block" onclick="window.location.href='contact-us';">
+                            <span class="btn-text">Contact Us</span>
+                            <div class="circle-background"></div>
+                            <div class="arrow-circle">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                </div>
+            </nav>
+             <!-- What We Do Mega Menu -->
+            <div class="mega-menu" id="what-we-do-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h5 class="mega-menu-title">What We Do</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 >Industries</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+                                <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+                                <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+                                <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+                                <li><a href="telecom">Telecom</a></li>
+                                <li><a href="healthcare">Healthcare</a></li>
+                                <li><a href="agriculture">Agriculture</a></li>
+                                <li><a href="education">Education</a></li>
+                                <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+                                <li><a href="solid-waste-management">Solid Waste Management</a></li>
+                                <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Expertise</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="digital-transformation">Digital Transformation</a></li>
+                                <li><a href="software-development">Software Development</a></li>
+                                <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+                                <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+                                <li><a href="blockchain">Blockchain</a></li>
+                                <li><a href="geographic-information-system-gis">Geographic Information System ( GIS )</a></li>
+                                <li><a href="cybersecurity">Cybersecurity</a></li>
+                                <li><a href="cloud">Cloud</a></li>
+                                <li><a href="it-consultancy">IT Consultancy</a></li>
+                                <li><a href="data-center-services">Data Center Services</a></li>
+                                <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Products</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+                                <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+                                <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+                                <li><a href="project-process-management-system">Project Process Management System</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Resources Mega Menu -->
+            <div class="mega-menu" id="resources-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="mega-menu-title">Resources</h5>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="blogs">Blogs</a></li>
+                                <li><a href="case-studies">Case Studies</a></li>
+                                <li><a href="news-events">News & Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Who We Are Mega Menu -->
+            <div class="mega-menu" id="who-we-are-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="mega-menu-title">Who We Are</h5>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="about-us">About SCS Tech</a></li>
+                                <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+                                <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- End Navigation panel -->
+             <div id="mobile-nav-container">
+                <div class="mobile-nav-header">
+                    <a href="/">
+                      <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="Logo" width="110">
+                    </a>
+                    <button class="mobile-close-btn" aria-label="Close navigation menu">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                
+                <!-- Main Mobile Menu -->
+                <div id="mobile-main-menu" class="mobile-submenu active">
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-who-we-are">
+                                Who we are
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-what-we-do">
+                                What we do
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-resources">
+                                Resources
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="career">Careers</a>
+                        </li>
+                        <li>
+                            <a href="contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Who We Are Submenu -->
+                <div id="mobile-who-we-are" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>Who We Are</h3>
+                    </div>
+                    <ul class="mobile-menu-list">
+                        <li><a href="about-us">About SCS Tech</a></li>
+                        <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+                        <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+                    </ul>
+                </div>
+                
+                <!-- What We Do Submenu -->
+                <div id="mobile-what-we-do" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>What We Do</h3>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Industries</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+                            <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+                            <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+                            <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+                            <li><a href="telecom">Telecom</a></li>
+                            <li><a href="healthcare">Healthcare</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+                            <li><a href="solid-waste-management">Solid Waste Management</a></li>
+                            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Expertise</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="digital-transformation">Digital Transformation</a></li>
+                            <li><a href="software-development">Software Development</a></li>
+                            <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+                            <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+                            <li><a href="blockchain">Blockchain</a></li>
+                            <li><a href="geographic-information-system-gis">Geographic Information System (GIS)</a></li>
+                            <li><a href="cybersecurity">Cybersecurity</a></li>
+                            <li><a href="cloud">Cloud</a></li>
+                            <li><a href="it-consultancy">IT Consultancy</a></li>
+                            <li><a href="data-center-services">Data Center Services</a></li>
+                            <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Products</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+                            <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+                            <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+                            <li><a href="project-process-management-system">Project Process Management System</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Resources Submenu -->
+                <div id="mobile-resources" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>Resources</h3>
+                    </div>
+                    <ul class="mobile-menu-list">
+                        <li><a href="blogs">Blogs</a></li>
+                        <li><a href="case-studies">Case Studies</a></li>
+                        <li><a href="news-events">News & Events</a></li>
+                    </ul>
+                </div>
+            </div>
+            <main>
+ <section class="small-section  pb-10">
+                    <div class="container1">
+                        <h2 class="product-title py-3 ">Intelligent Theft Detection System for Power Utilities</h2>
+                        <div class="product-image-container">
+                            <!-- Placeholder image - replace with actual product image -->
+                              <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766567783/Intelligent-Theft-Detection-System-for-Power-Utilities_ydujjs.webp" class="case-study-banner">
+                        </div>
+                  <div class="row">
+                    <p class="product-description-1 mt-3 mb-0">Across many cities, electricity poles are the most vulnerable points in the entire power network. Late at night, illegal wires are quietly hooked to live lines. Meters are tampered with. Connections are bypassed. A single pole-level theft can overload transformers, cause sudden outages, damage appliances, and leave honest customers paying the price. And for power utility teams, finding these hidden theft points is extremely difficult as it takes hours of manual patrolling, guesswork, and field visits.</p>
+                    <p class="product-description-1 mt-3 mb-0">Our next-generation AI-powered platform helps electricity boards automatically spot, track, and prevent power theft. It watches how electricity is flowing across poles, meters, and feeders, and immediately alerts the team when something looks suspicious. Whether it's a sudden surge, a drop in consumption, or an unusual connection pattern, our smart solution picks it up instantly.</p>
+                  </div>
+                        </div>
+                </section>
+                <section class="small-section pb-10">
+                    <div class="container1">
+<h2 class="contact-us-heading2">How Power Theft Usually Happens</h2>
+<div class="row">
+    <div class="col-lg-4 col-md-4 product-feature-card">
+<img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766568368/electric_pol_e5xsug.webp" class="product-feature-card" alt="electric_pol &amp; Structures"style="height:554px ;margin-bottom: 16px;" >
+<p class="product-feature-description">Illegal hooking from poles.</p>
+    </div>
+    <div class="col-lg-8 col-md-8">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 product-feature-card">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766569067/bypassing-or-tampering_-with-meters._fdbqun.webp" class="product-feature-image" alt="bypassing-or-tampering-img &amp; Structures">
+<p class="product-feature-description">Bypassing or tampering with meters.</p>
+    </div>
+    
+    <div class="col-lg-6 col-md-6 product-feature-card">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766569551/unregistered-connections-img_eekyzc.webp" class="product-feature-image" alt="unregistered-connections-img &amp; Structures">
+<p class="product-feature-description">Unregistered connections pulled directly from live wires.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 product-feature-card">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766570119/laod-manipulation-by-small-shops-img_efuyfy.webp" class="product-feature-image" alt="laod-manipulation-by-small-shops-img &amp; Structures">
+<p class="product-feature-description">Laod manipulation by small shops, homes, or industries.</p>
+    </div>
+    <div class="col-lg-6 col-md-6 product-feature-card">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766570666/sharing-or-splitting-one-legal-connection-into-multiple-illegal-ones_xtrpxq.webp" class="product-feature-image" alt="sharing-or-splitting-one-legal-connection-img &amp; Structures">
+<p class="product-feature-description">Sharing or splitting one legal connection into multiple illegal ones.</p>
+    </div>
+        </div>
+    </div>
+</div>
+                    </div>
+                </section>
+                <section class="small-section pb-10">
+                    <div class="container1">
+                        <h2 class="contact-us-heading2 mb-0">Product Overview</h2>
+                        <p class="product-description-1">This is a comprehensive, automated theft detection engine that continuously evaluates:</p>
+                                          
+<div class="slider-container">
+  <div class="slider-wrapper">
+    <div class="slider" id="slider">
+      <div class="slide slider-1">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766571201/sudden-spikesdrops-in-consumption-img_zkcd8i.webp" alt="sudden-spikesdrops-in-consumption-img">
+        <div class="overlay">
+          <p>Consumer-level electricity usage</p>
+        </div>
+      </div>
+
+      <div class="slide slider-2">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766571647/meter-readings-img_sb089o.webp" alt="meter-readings-img">
+        <div class="overlay">
+          <p>Meter readings (smart or conventional)</p>
+        </div>
+      </div>
+
+      <div class="slide slider-3">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766572028/feeder-load-variations-img_fpmi7z.webp" alt="feeder-load-variations-img">
+        <div class="overlay">
+        <p>Feeder load variations</p>
+        </div>
+      </div>
+
+      <div class="slide slider-4">
+       <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766573718/sudden-spikesdrops-img_jjbew0.webp" alt="sudden-spikesdrops-img">
+        <div class="overlay">
+          <p>Sudden spikes/drops in consumption</p>
+        </div>
+      </div>
+
+      <div class="slide slider-5">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766574070/phase-imbalances-img_kmheqe.webp" alt="phase-imbalances-img">
+        <div class="overlay">
+          <p>Phase imbalances</p>
+        </div>
+      </div>
+      <div class="slide slider-6">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766574835/meter-tampering-indicators-img_ooz9ip.webp" alt="meter-tampering-indicators-img_ooz9ip.webp">
+        <div class="overlay">
+          <p>Meter tampering indicators</p>
+        </div>
+      </div>
+      <div class="slide slider-7">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766575400/gis-based-connectivity_-mapping-img_amjbh4.webp" alt="gis-based-connectivity-mapping-img">
+        <div class="overlay">
+         <p>GIS-based connectivity mapping</p>
+        </div>
+      </div>
+      <div class="slide slider-8">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766575758/weather-_-local-events-img_rqeje4.webp" alt="weather-local-events-img">
+        <div class="overlay">
+          <p>Weather & local events affecting load</p>
+        </div>
+      </div>
+      <div class="slide slider-9">
+        <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766576157/historical-theft-prone-img_o29d1g.webp" alt="historical-theft-prone-img">
+        <div class="overlay">
+        <p>Weather & local events affecting load</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="nav-wrapper">
+    <button class="nav prev">❮</button>
+    <button class="nav next">❯</button>
+  </div>
+</div>    
+                    </div>
+                </section>
+                <section class="small-section pb-10 theft-Identification-section">
+                    <div class="container1">
+                         <h2 class="contact-us-heading2 mb-0">Theft Identification</h2>
+                         <div class="card-container">
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767072758/theft-Identification-icon_bpgplf.png" alt="theft-Identification-icon">
+    <img loading="lazy" width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767072551/theft-Identification-light-icon_v6iquf.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+  </div>
+    <p class="card-text">Sudden changes in electricity usage</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767072879/theft-Identification-icon2_w42mih.png" alt="theft-Identification-icon">
+    <img loading="lazy" width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767072991/theft-Identification-light-icon2_sdef71.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+   </div>
+    <p class="card-text">Unusual load on a pole or transformer</p>
+  </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images ">
+     <img width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073185/theft-Identification-icon3_eascpt.png" alt="theft-Identification-icon">
+    <img width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073200/theft-Identification-light-icon3_s7djye.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+   </div>
+    <p class="card-text">Areas receiving more power than what is billed</p>
+    </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073439/theft-Identification-icon4_oziqpw.png" alt="theft-Identification-icon">
+    <img loading="lazy" width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073451/theft-Identification-light-icon4_p0mvfw.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+   </div>
+    <p class="card-text">Meters showing abnormal or repeated patterns</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073693/theft-Identification-icon5_oiy2dj.png" alt="theft-Identification-icon">
+    <img loading="lazy" width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073707/theft-Identification-light-icon5_vv154o.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+   </div>
+    <p class="card-text">Connections drawing power even when meters show zero usage</p>
+   
+  </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130"  class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073915/theft-Identification-icon6_oblf5b.png" alt="theft-Identification-icon">
+    <img loading="lazy" width="130"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767073901/theft-Identification-light-icon6_azlr6i.png" class="card-hover-to-show" alt="theft-Identification-light-icon"/>
+   </div>
+    <p class="card-text">Comparison of supply vs. actual consumption in an area</p>
+   
+  </div>
+</div>
+                         </div>
+                    </div>
+                </section>
+                <section class="small-section pb-10">
+                    <div class="container1">
+                        <h2 class="contact-us-heading2 mb-0">Key Features</h2>
+                       <div class="row key-features pt-3">
+  <!-- Left Column Accordion -->
+  <div class="col-lg-6">
+    <div class="accordion" id="accordionLeft">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+             Real-Time Theft Alerts
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #1</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Visual Theft Hotspot Maps
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #2</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             Smart Pattern Learning
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column Accordion -->
+  <div class="col-lg-6">
+    <div class="accordion" id="accordionRight">
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Easy Integration
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionRight">
+          <div class="card-body">Content for item #1</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+             Field Team Assistance
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionRight">
+          <div class="card-body">Content for item #2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </section>
+
+                <section class="small-section pb-10">
+                  <div class="container1">
+                     <h2 class="contact-us-heading2 mb-3">Impact</h2>
+                     <div class="row">
+                            <!-- Feature Card 1 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766579169/impact-image1_luzrcp.webp" class="product-feature-image" alt="reduction-img &amp; Centralizes">
+                                <h3 class="product-feature-title">Up to 30-50% reduction in theft related losses</h3>
+                                
+                            </div>
+                            
+                            <!-- Feature Card 2 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766579610/imparct-image2_szgczw.webp" class="product-feature-image" alt="Faster identification of problem  &amp; Centralizes">
+                                <h3 class="product-feature-title">Faster identification of problem </h3>
+                            </div>
+                            
+                            <!-- Feature Card 3 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766579850/impact-image3_crydsq.webp" class="product-feature-image" alt="Fewer outages caused  &amp; Centralizes">
+                                <h3 class="product-feature-title">Fewer outages caused by illegal tapping</h3>
+                            </div>
+                            
+                            <!-- Feature Card 4 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766580105/impact-image4_tb2nk1.webp" class="product-feature-image" alt="Improved billing accuracy &amp; Centralizes">
+                                <h3 class="product-feature-title">Improved billing accuracy</h3>
+                            </div>
+                        </div>
+                  </div>
+                </section>
+                <section class="small-section pb-10">
+                  <div class="container1 Benefits-section">
+                     <h2 class="contact-us-heading2 mb-3">Benefits</h2>
+                     <div class="card-container">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Find theft locations quickly</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                         <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Reduce power losses and improve revenue</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Lower the burden on field teams</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Improve supply quality for honest customers</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Prevent transformer overloads and outages</p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                         <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Strengthen trust between utilities and consumers</p>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+                <section class="small-section pb-10 data-security-compliance-section">
+                  <div class="container1">
+                    <h2 class="contact-us-heading2 mb-5">Data Security & Compliance</h2>
+                    <div class="data-security-compliance-desktop-view">
+                      <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766728914/data-security-_-compliance_eg8beh.webp" alt="data-security-compliance-img">
+                    <div class="row py-3">
+                      <div class="col-lg-3 col-md-3">
+                        <p class="product-feature-description text-center">Utility-grade cybersecurity</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <p class="product-feature-description  text-center">End-to-end encrypted data transfer</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <p class="product-feature-description  text-center">Robust access control and audit logs</p>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                        <p class="product-feature-description  text-center">Compliant with Indian electricity board regulations</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="data-security-compliance-mobile-view">                     
+                        <div class="left-text"><p class="product-feature-description">Robust access control and audit logs</p></div>
+                        <div class="left-text2"><p class="product-feature-description">End-to-end encrypted data transfer</p></div>
+                        <div class="image">
+                          <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767099659/data-security-compliance-vertical-image_itqk03.webp" alt="data-security-compliance-img">
+                        </div>
+                        <div class="right-text"><p class="product-feature-description"> Utility-grade cybersecurity</p></div>
+                        <div class="right-text2"><p class="product-feature-description">Compliant with Indian electricity board regulations</p></div>
+                      </div>
+                    </div>
+                </section>
+                 <section class="small-section pb-15 Why-Choose-section ">
+                  <div class="container1 ">
+                    <div class="dooted-h-line">
+                      <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767085867/dotted-h-line_mfg7jl.png" alt="dotted line ">
+                    </div>
+                     <h2 class="contact-us-heading2 mb-3">Why Choose Us ?</h2>
+                     <div class="card-container">
+                      <div class="card">
+                        <div class="card-body">
+                          <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767074751/artificial-intelligence-icon_t3wzgj.png" alt="artificial-intelligence-icon">
+                          <h3 class="product-feature-title">Strong <br> experience in <br> AI-driven  <br> infrastructure <br> monitoring</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767074880/chart-icon_osuhyy.png" alt="chart-icon">
+                          <h3 class="product-feature-title">Proven results in <br> government and <br> utility <br> deployments</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075033/power-line-icon_ekadet.png" alt="power-line-icon">
+                          <h3 class="product-feature-title">Customizable <br> algorithms for <br> Indian <br> distribution <br> networks</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075156/tech-support-icon_px6cll.png" alt="tech-support-icon">
+                          <h3 class="product-feature-title">Dedicated <br> implementation <br> and on-ground <br> support</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075277/startup-icon_pmkzhf.png" alt="startup-icon">
+                          <h3 class="product-feature-title">Rapid <br> deployment with <br> minimal system <br> overhaul</h3>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+                  <!-- -----------------------chatbot-page------------------------------------- -->
+                   <section class="page-padding">
+        <div class="container">
+          <div class="chatbot-btn-container">
+            <div class="chatbot-show-btn" data-bs-label="chatbot-show-btn" id="chatbot-show-btn" style="display: none;">
+              <img src="images/message-chatbot-icon2.png" alt="message-icon">
+          </div>
+          <div class="chatbot-container" id="chatbot-container" style="display: block;">
+            <div class="chatbot-container">
+              <div class="chatbot-header">
+                <div class="chatbot-header-content">
+                 <span class="chatbot-header-icon">
+                   <img src="images/message-chatbot-icon2.png" width="28" height="28" alt="message-icon">
+                 </span>
+                  <p>I am Nexus.</p>
+                </div>
+                <div class="chatbot-close-btn">
+                  <img src="images/chatbot-close-icon.png" alt="chatbot-close-btn-img" width="24" height="24" id="chatbot-close-btn">
+                </div>
+              </div>
+              <div class="chatbot-content" id="chatbot-content"></div>
+              <div class="chatbot-input-container">
+                <div class="back-btn">
+                 <button onclick="mainMenu()" >Main Menu</button>
+                   <button id="backBtn" onclick="backBtn(this)">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></section>
+            </main>
+
+             <!-- Footer -->
+               
+<footer class="container-fluid footer-container">
+  <div class="row">
+<div class="col-m-2 col-lg-2 footer-logo">
+    <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="logo">
+</div>
+<div class="col-md-10 col-lg-10">
+  <div class="row">
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Who we are</p>
+      <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="about-us">About SCS Tech</a></li>
+        <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+        <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+       </ul>
+      </div>
+      </div>
+      <div class="footer-content">
+        <p class="footer-title">Resources</p>
+        <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="blogs">Blogs</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="news-events">News & Events</a></li>
+       </ul>
+      </div>
+      </div>
+      <div class="footer-content">
+        <p class="footer-title">Careers</p>
+        <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="career">Careers</a></li>
+       </ul>
+      </div>
+      </div>
+    </div>
+     <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Industries</p>
+      <div class="footer-links ">
+          <ul class="navbar-nav">
+            <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+            <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+            <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+            <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+            <li><a href="telecom">Telecom</a></li>
+            <li><a href="healthcare">Healthcare</a></li>
+            <li><a href="agriculture">Agriculture</a></li>
+            <li><a href="education">Education</a></li>
+            <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+            <li><a href="solid-waste-management">Solid Waste Management</a></li>
+            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+          </ul>
+        </ul>
+          <ul class="navbar-nav footer-dorpdown ">
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Expertise</p>
+        <div class="footer-links">
+          <ul class="navbar-nav">
+            <li><a href="digital-transformation">Digital Transformation</a></li>
+            <li><a href="software-development">Software Development</a></li>
+            <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+            <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+            <li><a href="blockchain">Blockchain</a></li>
+            <li><a href="geographic-information-system-gis.html">Geographic Information System ( GIS )</a></li>
+            <li><a href="cybersecurity">Cybersecurity</a></li>
+            <li><a href="cloud">Cloud</a></li>
+            <li><a href="it-consultancy">IT Consultancy</a></li>
+            <li><a href="data-center-services">Data Center Services</a></li>
+            <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Products</p>
+        <div class="footer-links">
+              <ul class="navbar-nav">
+            <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+            <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+            <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+            <li><a href="project-process-management-system">Project Process Management System</a></li>
+          </ul>
+        </div>
+      </div>
+       <div class="footer-content">
+        <p class="footer-title">Social</p>
+         <div class="footer-links ">
+       <div class="d-flex justify-content-start gap-3 social-icons">
+                           <a href="https://www.linkedin.com/company/scstechindia-pvt-ltd/?viewAsMember=true" title="LinkedIn+" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <!-- <a href="https://twitter.com/scstech_india" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                                <a href="https://www.instagram.com/scs.techindia/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <!-- <a href="https://www.facebook.com/scstechindiapvtltd" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+                                <a href="https://www.youtube.com/@adminscstech" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                             </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <hr>
+  <div class="row mr-1 px-md-5 px-lg-5 ">
+                    <div class="col-md-6 col-lg-6 mb-2 mb-md-0">
+                        <div class="footer-left-text">© 2025 SCS Tech</div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 mb-2 mb-md-0">
+                        <div class="footer-right-text">
+                          <ul class="footer-disclaimer-privacy-text">
+                               <li>Disclaimer</li>
+                          <li>Privacy Policy</li>
+                          </ul>
+                        </div>
+                      </div>
+                  
+</footer>
+        </div>
+         <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+        <!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+                <!-- <script type="text/javascript" src="js/blog.js"></script> -->
+      
+        <script type="text/javascript" src="js/nav.js"></script> 
+        <script async type="text/javascript" src="js/chatbot.js"></script> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const cardsWrapper = document.querySelector('.product-cards-wrapper');
+                const cards = document.querySelectorAll('.product-card');
+                const prevButton = document.querySelector('.carousel-control-prev');
+                const nextButton = document.querySelector('.carousel-control-next');
+                const paginationDots = document.querySelectorAll('.pagination-dot');
+                const carouselContainer = document.querySelector('.product-carousel-container');
+                
+                // Determine cards per view based on screen size
+                function getCardsPerView() {
+                    const windowWidth = window.innerWidth;
+                    if (windowWidth <= 576) return 1; // Mobile: 1 card
+                    if (windowWidth <= 768) return 2; // Small tablet: 2 cards
+                    if (windowWidth <= 992) return 3; // Large tablet: 3 cards
+                    return 4; // Desktop: 4 cards
+                }
+                
+                // Ensure all cards are visible in DOM
+                cards.forEach(card => {
+                    card.style.display = 'block';
+                });
+                
+                let cardsPerPage = getCardsPerView();
+                const totalCards = cards.length;
+                let totalPages = Math.ceil(totalCards / cardsPerPage);
+                
+                let currentPage = 0;
+                
+                // Reset carousel position to show first set of cards
+                cardsWrapper.style.transform = 'translateX(0)';
+                
+                // Function to update carousel position
+                function updateCarousel() {
+                    // Get current card width based on responsive view
+                    const computedCardWidth = cards[0].getBoundingClientRect().width;
+                    const offset = -currentPage * cardsPerPage * computedCardWidth;
+                    
+                    // Apply transform with smooth transition
+                    cardsWrapper.style.transform = `translateX(${offset}px)`;
+                    
+                    // Update pagination dots
+                    paginationDots.forEach((dot, index) => {
+                        dot.classList.remove('active');
+                        // Only show pagination dots that are needed
+                        if (index < totalPages) {
+                            dot.style.display = 'block';
+                        } else {
+                            dot.style.display = 'none';
+                        }
+                    });
+                    
+                    // Make sure we don't try to activate a dot that doesn't exist
+                    if (currentPage < totalPages) {
+                        paginationDots[currentPage].classList.add('active');
+                    }
+                    
+                    console.log('Current page:', currentPage, 'Cards per page:', cardsPerPage, 'Total pages:', totalPages);
+                }
+                
+                // Recalculate layout when screen size changes
+                function handleResize() {
+                    const newCardsPerPage = getCardsPerView();
+                    
+                    // Only update if cards per page changed
+                    if (newCardsPerPage !== cardsPerPage) {
+                        cardsPerPage = newCardsPerPage;
+                        totalPages = Math.ceil(totalCards / cardsPerPage);
+                        
+                        // Make sure current page is valid
+                        if (currentPage >= totalPages) {
+                            currentPage = totalPages - 1;
+                        }
+                        
+                        // Update carousel with new layout
+                        updateCarousel();
+                    } else {
+                        // Still update to recalculate positions
+                        updateCarousel();
+                    }
+                }
+                
+                // Event listeners for next and previous buttons
+                nextButton.addEventListener('click', function() {
+                    if (currentPage < totalPages - 1) {
+                        currentPage++;
+                    } else {
+                        currentPage = 0; // Loop back to the first page
+                    }
+                    updateCarousel();
+                });
+                
+                prevButton.addEventListener('click', function() {
+                    if (currentPage > 0) {
+                        currentPage--;
+                    } else {
+                        currentPage = totalPages - 1; // Loop to the last page
+                    }
+                    updateCarousel();
+                });
+                
+                // Event listeners for pagination dots
+                paginationDots.forEach((dot, index) => {
+                    dot.addEventListener('click', function() {
+                        // Only allow clicking on dots that represent actual pages
+                        if (index < totalPages) {
+                            currentPage = index;
+                            updateCarousel();
+                        }
+                    });
+                });
+                
+                // Initialize carousel
+                window.addEventListener('resize', handleResize);
+                handleResize(); // Initial setup
+                
+                // Add touch/swipe support for mobile
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                carouselContainer.addEventListener('touchstart', function(e) {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, false);
+                
+                carouselContainer.addEventListener('touchend', function(e) {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, false);
+                
+                function handleSwipe() {
+                    const minSwipeDistance = 50;
+                    
+                    if (touchEndX < touchStartX - minSwipeDistance) {
+                        // Swiped left - go next
+                        if (currentPage < totalPages - 1) {
+                            currentPage++;
+                        } else {
+                            currentPage = 0;
+                        }
+                        updateCarousel();
+                    }
+                    
+                    if (touchEndX > touchStartX + minSwipeDistance) {
+                        // Swiped right - go previous
+                        if (currentPage > 0) {
+                            currentPage--;
+                        } else {
+                            currentPage = totalPages - 1;
+                        }
+                        updateCarousel();
+                    }
+                }
+            });
+        </script>
+
+     <script>
+  function loadAnalytics() {
+  const s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0';
+  s.async = true;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K6N9WEW7B0', { send_page_view: true });
+}
+window.addEventListener('scroll', loadAnalytics, { once: true });
+
+</script>
+
+<script>
+const slider = document.getElementById("slider");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+
+let visible = getVisibleSlides();
+let index = visible;
+
+function getVisibleSlides() {
+  if (window.innerWidth < 600) return 1;
+  if (window.innerWidth < 900) return 2;
+  return 4;
+}
+
+function setupSlider() {
+  const originalSlides = [...slider.children];
+  slider.innerHTML = "";
+
+  visible = getVisibleSlides();
+  index = visible;
+
+  const slideWidth = `calc(${100 / visible}% - 10px)`;
+
+  originalSlides.forEach(slide => {
+    slide.style.minWidth = slideWidth;
+    slider.appendChild(slide);
+  });
+
+  // clone for infinite loop
+  const firstClones = originalSlides.slice(0, visible).map(s => s.cloneNode(true));
+  const lastClones = originalSlides.slice(-visible).map(s => s.cloneNode(true));
+
+  lastClones.forEach(c => slider.prepend(c));
+  firstClones.forEach(c => slider.appendChild(c));
+
+  slider.style.transition = "none";
+  slider.style.transform = `translateX(-${index * (100 / visible)}%)`;
+}
+
+setupSlider();
+window.addEventListener("resize", setupSlider);
+
+next.onclick = () => {
+  const step = 100 / visible;
+  index++;
+  slider.style.transition = "transform 0.4s ease";
+  slider.style.transform = `translateX(-${index * step}%)`;
+
+  if (index === slider.children.length - visible) {
+    setTimeout(() => {
+      slider.style.transition = "none";
+      index = visible;
+      slider.style.transform = `translateX(-${index * step}%)`;
+    }, 400);
+  }
+};
+
+prev.onclick = () => {
+  const step = 100 / visible;
+  index--;
+  slider.style.transition = "transform 0.4s ease";
+  slider.style.transform = `translateX(-${index * step}%)`;
+
+  if (index === 0) {
+    setTimeout(() => {
+      slider.style.transition = "none";
+      index = slider.children.length - (visible * 2);
+      slider.style.transform = `translateX(-${index * step}%)`;
+    }, 400);
+  }
+};
+</script>
+
+
+</body>
+</html>

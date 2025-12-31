@@ -245,6 +245,14 @@
       {
         "source": "/Strengthening-National-Defence",
         "destination": "/Strengthening-National-Defence.html"
+      },
+      {
+        "source": "/Intelligent-Theft-Detection-System-for-Power-Utilities",
+        "destination": "/Intelligent-Theft-Detection-System-for-Power-Utilities.html"
+      },
+      {
+        "source": "/aI-copilot-for-mumbai-fire-brigade",
+        "destination": "/aI-copilot-for-mumbai-fire-brigade.html"
       }
       
     ]

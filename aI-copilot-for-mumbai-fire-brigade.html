@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="canonical" href="https://www.scstechindia.com/intelligent-debriefing-with-analytics-ida" />
+    <title>AI Copilot for Mumbai Fire Brigade</title>
+  <meta name="description" content="Streamline debrief workflows with SCS Tech’s IDA platform—powered by AI/ML service, GIS mapping services, incident management software, and digital transformation.">
+  
+        <meta name="keywords" content="Digital Transformation, IT, Information Technology, Digital Innovation, IT Information, Digital, Technology, Bussiness Analytics, New Tech">
+        <meta charset="utf-8">
+        <meta name="author" content="SCS Tech">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> -->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+        
+         <!-- Favicons -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        </noscript>
+
+        <link rel="shortcut icon" href="images/favicon.png">
+        <script src="https://kit.fontawesome.com/e8c1c6e963.js" crossorigin="anonymous" async></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <!-- <link rel="stylesheet" href="css/style-responsive.css"> -->
+            <link rel="preload" href="css/style-responsive.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/style-responsive.css"></noscript>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" /> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"></noscript>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"></noscript>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/> -->
+ <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+         <link rel="preload" href="css/animate.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/animate.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/verticals.min.css"> -->
+         <link rel="preload" href="css/verticals.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/verticals.min.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
+         <link rel="preload" href="css/owl.carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/owl.carousel.css"></noscript>
+        <!-- <link rel="stylesheet" href="css/magnific-popup.css">     -->
+         <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/magnific-popup.css"></noscript>
+ 
+        <!-- In <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+ <!-- ------------------------font-awesome-icon------ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       
+       
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+            <style>
+                .key-features .card-footer, .card-header , .btn-link, .btn-link:hover{
+background-color: #FF4545;
+color: #ffffff;
+text-decoration: none;
+
+                }
+                .key-features .btn-link:focus{
+                    box-shadow: none;
+                    text-decoration: none;
+                }
+                .key-features .card{
+                    margin-bottom: 5px;
+                    border: none;
+                }
+                .key-features .card-body{
+background-color:#1A1A1A; color: #ffffff;
+                }
+
+    .btn-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    /* Rotate arrow when collapsed */
+    .btn-link i {
+      transition: transform 0.3s;
+    }
+
+    .btn-link.collapsed i {
+      transform: rotate(-90deg);
+    }
+    .theft-Identification-section .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px 0px;
+    }
+.theft-Identification-section .card{
+    background-color: transparent;
+    border: 1px solid #FF4545;
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+.theft-Identification-section .card:hover{
+background-color: #FF4545;
+color: #ffffff;
+}
+.theft-Identification-section p, .Benefits-section p {
+    padding: 16px 0px;
+    text-align: center;
+}
+
+.Benefits-section  .card{
+  background-color: #323232;
+  color: #ffffff;
+transition: all 0.3s linear;
+ border:none;
+}
+
+.Benefits-section  .card:hover{
+background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
+}
+.Benefits-section .card .check-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF4545;
+}
+.Benefits-section  .card img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.Why-Choose-section{
+  background: linear-gradient(#000000, #492424);
+  position: relative;
+}
+.Why-Choose-section .dooted-h-line{
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  right: 0px;
+}
+.Why-Choose-section .dooted-h-line img{
+  height: 300px;
+  width: 100%;
+}
+.Why-Choose-section .card-container{
+  display: flex;
+padding: 30px 0px;
+}
+.Why-Choose-section .card-container .card{
+  width: 400px;
+  background-color: #323232;
+  border-radius: 0px;
+}
+.Why-Choose-section .card-container .card:first-child{
+  border-radius: 32px 0px 0px 32px;
+}
+.Why-Choose-section .card-container .card:last-child{
+  border-radius: 0px 32px 32px 0px;
+}
+.Why-Choose-section .card-container .card img{
+  width: 46px;
+  height:46px;
+  margin-bottom: 20px;
+  transition: all 0.3s linear;
+}
+.Why-Choose-section .card-container .card .product-feature-title{
+font-weight: 500;
+}
+.product-feature-card ul{
+    padding: 0px 18px;
+}
+.product-feature-card li , .product-feature-card  a{
+    color: #ffffff;
+}
+.product-feature-card li:hover , .product-feature-card  a:hover{
+    color: #FF4545;
+}
+
+.theft-Identification-section .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+} 
+.theft-Identification-section .card:hover .card-hover-to-hide  {
+display: none;
+}
+.theft-Identification-section .images .card-hover-to-show{
+  display: none;
+}
+.theft-Identification-section .card:hover .card-hover-to-show  {
+display: block;
+
+}
+.key-features .btn i{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.key-features .btn-link.collapsed i {
+    transform: rotate(0deg);
+}
+.key-features .bi-chevron-down{
+  transform: rotate(180deg);
+}
+
+  </style>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-215637589-1');
+</script>
+
+        
+    </head>
+<body class="appear-animate">
+     <!-- Page Loader -->        
+        <div class="page-loader">
+            <div class="loader">
+                <!-- <img loading="lazy"  src="images/loader2.gif" alt="Logo" height="450" width="450"> -->
+                     <video autoplay loop muted playsinline height="75" width="75">
+  <source src="images/loader2.webm" type="video/webm">
+  <source src="images/loader2.webm" type="video/mp4">
+</video>
+            </div>
+        </div>
+
+        <div class="page" id="top">
+<!-- Navigation panel -->
+             <nav class="navbar navbar-expand-lg dark stick-fixed">
+                <div class="container-fluid px-4">
+                    <!-- Logo -->
+                    <div class="nav-logo-wrap mt-2">
+                        <a class="navbar-brand" href="/">
+                                 <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="Logo" height="60" width="150">
+
+                        </a>
+                    </div>
+        
+                   <!-- Mobile Toggle -->
+                    <button class="navbar-toggler d-lg-none" type="button" aria-label="Open navigation menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+        
+                    <!-- Main Navigation -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                           <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu=who-we-are >Who we are</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu="what-we-do">What we do</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="#" data-menu="resources">Resources</a>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="nav-link" href="career" data-menu="careers">Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Contact Button -->
+                        <button type="submit"  class="btn-submit mt-2 btn d-none d-lg-block" onclick="window.location.href='contact-us';">
+                            <span class="btn-text">Contact Us</span>
+                            <div class="circle-background"></div>
+                            <div class="arrow-circle">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8z"></path>
+                                </svg>
+                            </div>
+                        </button>
+                </div>
+            </nav>
+             <!-- What We Do Mega Menu -->
+            <div class="mega-menu" id="what-we-do-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <h5 class="mega-menu-title">What We Do</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4 >Industries</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+                                <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+                                <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+                                <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+                                <li><a href="telecom">Telecom</a></li>
+                                <li><a href="healthcare">Healthcare</a></li>
+                                <li><a href="agriculture">Agriculture</a></li>
+                                <li><a href="education">Education</a></li>
+                                <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+                                <li><a href="solid-waste-management">Solid Waste Management</a></li>
+                                <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Expertise</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="digital-transformation">Digital Transformation</a></li>
+                                <li><a href="software-development">Software Development</a></li>
+                                <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+                                <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+                                <li><a href="blockchain">Blockchain</a></li>
+                                <li><a href="geographic-information-system-gis">Geographic Information System ( GIS )</a></li>
+                                <li><a href="cybersecurity">Cybersecurity</a></li>
+                                <li><a href="cloud">Cloud</a></li>
+                                <li><a href="it-consultancy">IT Consultancy</a></li>
+                                <li><a href="data-center-services">Data Center Services</a></li>
+                                <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Products</h4>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+                                <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+                                <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+                                <li><a href="project-process-management-system">Project Process Management System</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Resources Mega Menu -->
+            <div class="mega-menu" id="resources-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="mega-menu-title">Resources</h5>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="blogs">Blogs</a></li>
+                                <li><a href="case-studies">Case Studies</a></li>
+                                <li><a href="news-events">News & Events</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Who We Are Mega Menu -->
+            <div class="mega-menu" id="who-we-are-menu">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="mega-menu-title">Who We Are</h5>
+                            <ul class="list-unstyled mega-list">
+                                <li><a href="about-us">About SCS Tech</a></li>
+                                <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+                                <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <!-- End Navigation panel -->
+             <div id="mobile-nav-container">
+                <div class="mobile-nav-header">
+                    <a href="/">
+                      <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="Logo" width="110">
+                    </a>
+                    <button class="mobile-close-btn" aria-label="Close navigation menu">
+                      <i class="fa fa-times"></i>
+                    </button>
+                  </div>
+                
+                <!-- Main Mobile Menu -->
+                <div id="mobile-main-menu" class="mobile-submenu active">
+                    <ul class="mobile-menu-list">
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-who-we-are">
+                                Who we are
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-what-we-do">
+                                What we do
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="mobile-menu-link" data-target="mobile-resources">
+                                Resources
+                                <span class="mobile-menu-arrow"><i class="fa fa-chevron-right"></i></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="career">Careers</a>
+                        </li>
+                        <li>
+                            <a href="contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Who We Are Submenu -->
+                <div id="mobile-who-we-are" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>Who We Are</h3>
+                    </div>
+                    <ul class="mobile-menu-list">
+                        <li><a href="about-us">About SCS Tech</a></li>
+                        <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+                        <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+                    </ul>
+                </div>
+                
+                <!-- What We Do Submenu -->
+                <div id="mobile-what-we-do" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>What We Do</h3>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Industries</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+                            <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+                            <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+                            <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+                            <li><a href="telecom">Telecom</a></li>
+                            <li><a href="healthcare">Healthcare</a></li>
+                            <li><a href="agriculture">Agriculture</a></li>
+                            <li><a href="education">Education</a></li>
+                            <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+                            <li><a href="solid-waste-management">Solid Waste Management</a></li>
+                            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Expertise</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="digital-transformation">Digital Transformation</a></li>
+                            <li><a href="software-development">Software Development</a></li>
+                            <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+                            <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+                            <li><a href="blockchain">Blockchain</a></li>
+                            <li><a href="geographic-information-system-gis">Geographic Information System (GIS)</a></li>
+                            <li><a href="cybersecurity">Cybersecurity</a></li>
+                            <li><a href="cloud">Cloud</a></li>
+                            <li><a href="it-consultancy">IT Consultancy</a></li>
+                            <li><a href="data-center-services">Data Center Services</a></li>
+                            <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mobile-submenu-section">
+                        <h4>Products</h4>
+                        <ul class="mobile-menu-list">
+                            <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+                            <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+                            <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+                            <li><a href="project-process-management-system">Project Process Management System</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Resources Submenu -->
+                <div id="mobile-resources" class="mobile-submenu" data-parent="mobile-main-menu">
+                    <div class="mobile-submenu-header">
+                        <button class="mobile-back-btn">
+                            <i class="fa fa-chevron-left"></i> Back
+                        </button>
+                        <h3>Resources</h3>
+                    </div>
+                    <ul class="mobile-menu-list">
+                        <li><a href="blogs">Blogs</a></li>
+                        <li><a href="case-studies">Case Studies</a></li>
+                        <li><a href="news-events">News & Events</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <main>
+ <section class="small-section  pb-10">
+                    <div class="container1">
+                        <h2 class="product-title py-3">AI Copilot for Mumbai Fire Brigade</h2>
+                        <div class="product-image-container">
+                            <!-- Placeholder image - replace with actual product image -->
+                              <img loading="lazy"  src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767078535/ai-copilot_-or-mumbai-fire-brigade-image_ksxjpw.webp" class="ai-copilot-banner">
+                        </div>
+                  <div class="row my-5 ">
+                 <div class="col-lg-6 col-md-6">
+                    <h2 class="heading-product3 mt-2">Next-Generation Predictive Intelligence for Urban Fire Safety</h2>
+                       <p class="product-description-1 mt-2 mb-0">A breakthrough AI-powered decision support system designed exclusively for the Mumbai Fire Brigade. </p>
+                    <p class="product-description-1 mt-2 mb-0">Our Copilot integrates real-time data streams, GIS intelligence, predictive analytics, and contextual risk modeling to help fire officers act faster, safer, and smarter.</p>
+<p class="product-description-1 mt-2 mb-0"> From anticipating fire risks to pruiding assisting during on-ground emergencies, the AI Copilot transforms traditional fire management into a proactive, data-driven, and situationally aware ecosystem.</p>
+                 </div>
+                 <div class="col-lg-6 col-md-6">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767078894/urban-fire-safety_zg0rn1.webp" alt="Urban-Fire-Safety-image">
+                 </div>
+                  </div>
+                        </div>
+                </section>
+                <section class="small-section pb-10 theft-Identification-section">
+                    <div class="container1">
+                         <h2 class="contact-us-heading2 mb-0">The AI Copilot for Mumbai Fire Brigade is an integrated intelligent assistant that continuously analyzes:</h2>
+                        <div class="card-container">
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075568/theft-Identification-icon7_f6jk1s.png" alt="GIS data">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075593/theft-Identification-light-icon7_pt3ddy.png" class="card-hover-to-show"alt="GIS data">
+   </div>
+    <p class="card-text">GIS data</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075882/theft-Identification-icon8_ppb6bg.png" alt="fire image">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767075893/theft-Identification-light-icon8_kjqmiz.png" class="card-hover-to-show"alt="fire image">
+   
+   </div>
+    <p class="card-text">Historical fire incident patterns</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076071/theft-Identification-icon9_wbt2dz.png" alt="Urban infrastructure data">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076087/theft-Identification-light-icon9_a7q1lv.png" class="card-hover-to-show"alt="Urban infrastructure data">
+   
+   </div>
+    <p class="card-text">Urban infrastructure data</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076391/theft-Identification-icon10_c3nk4m.png" alt="CCTV-image">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076410/theft-Identification-light-icon10_x50uqc.png" class="card-hover-to-show"alt="CCTV-image">
+   
+   </div>
+    <p class="card-text">Real-time anomaly detection from CCTV/IoT sensors</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076879/theft-Identification-icon11_zq4dmr.png" alt="traffic-bus-image">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767076891/theft-Identification-light-icon11_wta4oy.png" class="card-hover-to-show"alt="traffic-bus-image">
+   
+   </div>
+    <p class="card-text">Resource availability & traffic conditions</p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077005/theft-Identification-icon12_etremj.png" alt="Weather-image">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077017/theft-Identification-light-icon12_oawk9x.png" class="card-hover-to-show"alt="Weather-image">
+   
+   </div>
+    <p class="card-text">Weather </p>
+   </div>
+</div>
+                            <div class="card " style="width: 18rem;">
+  <div class="card-body ">
+   <div class="images">
+     <img loading="lazy" width="130" class="card-hover-to-hide" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077194/theft-Identification-icon13_pahsdj.png" alt="Temperature-image">
+    <img loading="lazy" width="130" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077205/theft-Identification-light-icon13_gcvncm.png" class="card-hover-to-show"alt="Temperature-image">
+   
+   </div>
+    <p class="card-text">Temperature</p>
+   </div>
+</div>
+                         </div>
+                    </div>
+                </section>
+                <section class="small-section pb-10">
+                    <div class="container1">
+                        <h2 class="contact-us-heading2 mb-0">Key Features</h2>
+                       <div class="row key-features pt-3">
+  <!-- Left Column Accordion -->
+  <div class="col-lg-6">
+    <div class="accordion" id="accordionLeft">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+             Real-Time Theft Alerts
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #1</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Visual Theft Hotspot Maps
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #2</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             Smart Pattern Learning
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionLeft">
+          <div class="card-body">Content for item #3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Column Accordion -->
+  <div class="col-lg-6">
+    <div class="accordion" id="accordionRight">
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Easy Integration
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionRight">
+          <div class="card-body">Content for item #1</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingFive">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+             Field Team Assistance
+              <i class="bi bi-chevron-down"></i>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionRight">
+          <div class="card-body">Content for item #2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                </section>
+                <section class="small-section pb-10">
+                  <div class="container1">
+                     <h2 class="contact-us-heading2 mb-3">How It Helps the Mumbai Fire Brigade</h2>
+                     <div class="row">
+                            <!-- Feature Card 1 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767079842/faster-response-better-preparedness_me7tc6.webp" class="product-feature-image" alt="faster response better preparedness">
+                                <h3 class="product-feature-title">Faster Response, Better Preparedness</h3>
+                                <nav>
+                                   <ul>
+                                     <li><a href="">Reduces response time with route and dispatch recommendations</a></li>
+                                    <li><a href="">Real-time alerts enhance preparedness</a></li>
+                                   </ul>
+                                </nav>
+                            </div>
+                            
+                            <!-- Feature Card 2 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767080106/improved-safety-of-firefighters_lrunan.webp" class="product-feature-image" alt="improved safety of firefighters">
+                                <h3 class="product-feature-title">Improved Safety of Firefighters </h3>
+                                 <nav>
+                                   <ul>
+                                     <li><a href="">Hazards predicted in advance</a></li>
+                                    <li><a href="">AI-assisted threat modeling reduces exposure to risks</a></li>
+                                   </ul>
+                                </nav>
+                            </div>
+                            
+                            <!-- Feature Card 3 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767080420/optimized-resource-allocation_e0kmzn.webp" class="product-feature-image" alt="optimized resource allocation">
+                                <h3 class="product-feature-title">Optimized Resource Allocation</h3>
+                                 <nav>
+                                   <ul>
+                                     <li><a href="">Prevents over/under-deployment</a></li>
+                                    <li><a href="">Helps manage manpower during festivals or high-risk periods</a></li>
+                                   </ul>
+                                </nav>
+                            </div>
+                            
+                            <!-- Feature Card 4 -->
+                            <div class="col-lg-3 col-md-6 product-feature-card">
+                                  <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767080589/city-wide-fire-risk-management_oi5gsp.webp" class="product-feature-image" alt="City wide fire risk management">
+                                <h3 class="product-feature-title">City-Wide Fire Risk Management</h3>
+                                 <nav>
+                                   <ul>
+                                     <li><a href="">Enables proactive inspections</a></li>
+                                    <li><a href="">Supports fire audits with data-backed insights</a></li>
+                                   </ul>
+                                </nav>
+                            </div>
+                        </div>
+                  </div>
+                </section>
+                <section class="small-section pb-10">
+                  <div class="container1 Benefits-section">
+                     <h2 class="contact-us-heading2 mb-3">Benefits</h2>
+                        <div class="row gap-2 ">
+                            <div class="col-lg-6 col-md-6">
+  <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Find theft locations quickly</p>
+                        </div>
+                      </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                 <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Reduce power losses and improve revenue</p>
+                        </div>
+                      </div>
+                            </div>
+                    <div class="col-lg-4 col-mg-4 py-4">
+                                              <div class="card">
+                        <div class="card-body">
+                         <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Lower the burden on field teams</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-mg-4 py-4">
+                         <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Improve supply quality for honest customers</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-mg-4 py-4">
+                        <div class="card">
+                        <div class="card-body">
+                          <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1766577386/check-mask-icon_fs4ygu.png" alt="check-icon">
+                          </div>
+                          <p class="card-text text-left">Prevent transformer overloads and outages</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="small-section pb-15 Why-Choose-section">
+                  <div class="container1">
+                    <div class="dooted-h-line">
+                      <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767085867/dotted-h-line_mfg7jl.png" alt="">
+                    </div>
+                     <h2 class="contact-us-heading2 mb-3">Why Choose Us ?</h2>
+                     <div class="card-container">
+                      <div class="card">
+                        <div class="card-body">
+                         <div class="check-img">
+                            <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077647/app-icon_daqxip.png" alt="app-icon">
+                          </div>
+                          <h3 class="product-feature-title">Proven experience <br> in building <br> real-time disaster <br> intelligence  <br>systems</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077756/location-icon_szjivb.png" alt="location-icon">
+                          <h3 class="product-feature-title">Strong expertise <br> in GIS, AI, and  <br> IoT integrations</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077849/city-icon_rwjh8o.png" alt="City-icon">
+                          <h3 class="product-feature-title">Tailored solutions <br> for Indian urban <br> infrastructure</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767077916/government_icon_fbg3dx.png" alt="Government office icon">
+                          <h3 class="product-feature-title">Successfully <br> collaborating <br> with government <br> agencies</h3>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1767078041/commerce_icon_sqakv3.png" alt="commerce-icon">
+                          <h3 class="product-feature-title">24/7 technical <br> support &  <br> on-ground <br> deployment  <br>assistance</h3>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+                </section>
+               
+                  <!-- -----------------------chatbot-page------------------------------------- -->
+                   <section class="page-padding">
+        <div class="container">
+          <div class="chatbot-btn-container">
+            <div class="chatbot-show-btn" data-bs-label="chatbot-show-btn" id="chatbot-show-btn" style="display: none;">
+              <img src="images/message-chatbot-icon2.png" alt="message-icon">
+          </div>
+          <div class="chatbot-container" id="chatbot-container" style="display: block;">
+            <div class="chatbot-container">
+              <div class="chatbot-header">
+                <div class="chatbot-header-content">
+                 <span class="chatbot-header-icon">
+                   <img src="images/message-chatbot-icon2.png" width="28" height="28" alt="message-icon">
+                 </span>
+                  <p>I am Nexus.</p>
+                </div>
+                <div class="chatbot-close-btn">
+                  <img src="images/chatbot-close-icon.png" alt="chatbot-close-btn-img" width="24" height="24" id="chatbot-close-btn">
+                </div>
+              </div>
+              <div class="chatbot-content" id="chatbot-content"></div>
+              <div class="chatbot-input-container">
+                <div class="back-btn">
+                 <button onclick="mainMenu()" >Main Menu</button>
+                   <button id="backBtn" onclick="backBtn(this)">Back</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></section>
+            </main>
+
+             <!-- Footer -->
+               
+<footer class="container-fluid footer-container">
+  <div class="row">
+<div class="col-m-2 col-lg-2 footer-logo">
+    <img src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1764830496/SCS_logo2_p2ryim.webp" alt="logo">
+</div>
+<div class="col-md-10 col-lg-10">
+  <div class="row">
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Who we are</p>
+      <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="about-us">About SCS Tech</a></li>
+        <li><a href="life-at-scs-tech">Life at SCS Tech</a></li>
+        <li><a href="awards-and-recognition">Awards & Recognition</a></li>
+       </ul>
+      </div>
+      </div>
+      <div class="footer-content">
+        <p class="footer-title">Resources</p>
+        <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="blogs">Blogs</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="news-events">News & Events</a></li>
+       </ul>
+      </div>
+      </div>
+      <div class="footer-content">
+        <p class="footer-title">Careers</p>
+        <div class="footer-links">
+       <ul class="navbar-nav">
+        <li><a href="career">Careers</a></li>
+       </ul>
+      </div>
+      </div>
+    </div>
+     <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Industries</p>
+      <div class="footer-links ">
+          <ul class="navbar-nav">
+            <li><a href="oil-gas-and-power">Oil, Gas & Power</a></li>
+            <li><a href="banking-financial-services-and-insurance">Banking, Financial Services & Insurance</a></li>
+            <li><a href="homeland-security-and-defense">Homeland Security & Defense</a></li>
+            <li><a href="transport-and-logistics">Transport & Logistics</a></li>
+            <li><a href="telecom">Telecom</a></li>
+            <li><a href="healthcare">Healthcare</a></li>
+            <li><a href="agriculture">Agriculture</a></li>
+            <li><a href="education">Education</a></li>
+            <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
+            <li><a href="solid-waste-management">Solid Waste Management</a></li>
+            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
+          </ul>
+        </ul>
+          <ul class="navbar-nav footer-dorpdown ">
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Expertise</p>
+        <div class="footer-links">
+          <ul class="navbar-nav">
+            <li><a href="digital-transformation">Digital Transformation</a></li>
+            <li><a href="software-development">Software Development</a></li>
+            <li><a href="ai-ml-and-data-analytics-services">AI/ML & Data Analytics Services</a></li>
+            <li><a href="robotic-process-automation">Robotic Process Automation</a></li>
+            <li><a href="blockchain">Blockchain</a></li>
+            <li><a href="geographic-information-system-gis.html">Geographic Information System ( GIS )</a></li>
+            <li><a href="cybersecurity">Cybersecurity</a></li>
+            <li><a href="cloud">Cloud</a></li>
+            <li><a href="it-consultancy">IT Consultancy</a></li>
+            <li><a href="data-center-services">Data Center Services</a></li>
+            <li><a href="disaster-emergency-services">Disaster/Emergency Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-lg-3">
+      <div class="footer-content">
+        <p class="footer-title">Products</p>
+        <div class="footer-links">
+              <ul class="navbar-nav">
+            <li><a href="intelligent-debriefing-with-analytics-ida">Intelligent Debriefing with Analytics(IDA)</a></li>
+            <li><a href="smart-landslide-early-warning-system">Smart Landslide Early Warning System</a></li>
+            <li><a href="gis-based-workforce-and-fleet-tracking-system">GIS-based Workforce & Fleet Tracking System</a></li>
+            <li><a href="project-process-management-system">Project Process Management System</a></li>
+          </ul>
+        </div>
+      </div>
+       <div class="footer-content">
+        <p class="footer-title">Social</p>
+         <div class="footer-links ">
+       <div class="d-flex justify-content-start gap-3 social-icons">
+                           <a href="https://www.linkedin.com/company/scstechindia-pvt-ltd/?viewAsMember=true" title="LinkedIn+" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <!-- <a href="https://twitter.com/scstech_india" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                                <a href="https://www.instagram.com/scs.techindia/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <!-- <a href="https://www.facebook.com/scstechindiapvtltd" title="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a> -->
+                                <a href="https://www.youtube.com/@adminscstech" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+                             </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <hr>
+  <div class="row mr-1 px-md-5 px-lg-5 ">
+                    <div class="col-md-6 col-lg-6 mb-2 mb-md-0">
+                        <div class="footer-left-text">© 2025 SCS Tech</div>
+                    </div>
+                   <div class="col-md-6 col-lg-6 mb-2 mb-md-0">
+                        <div class="footer-right-text">
+                          <ul class="footer-disclaimer-privacy-text">
+                               <li>Disclaimer</li>
+                          <li>Privacy Policy</li>
+                          </ul>
+                        </div>
+                      </div>
+                  
+</footer>
+        </div>
+         <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+        <!-- <script type="text/javascript" src="js/SmoothScroll.js"></script> -->
+        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <script type="text/javascript" src="js/all.js"></script>
+                <!-- <script type="text/javascript" src="js/blog.js"></script> -->
+      
+        <script type="text/javascript" src="js/nav.js"></script> 
+        <script async type="text/javascript" src="js/chatbot.js"></script> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const cardsWrapper = document.querySelector('.product-cards-wrapper');
+                const cards = document.querySelectorAll('.product-card');
+                const prevButton = document.querySelector('.carousel-control-prev');
+                const nextButton = document.querySelector('.carousel-control-next');
+                const paginationDots = document.querySelectorAll('.pagination-dot');
+                const carouselContainer = document.querySelector('.product-carousel-container');
+                
+                // Determine cards per view based on screen size
+                function getCardsPerView() {
+                    const windowWidth = window.innerWidth;
+                    if (windowWidth <= 576) return 1; // Mobile: 1 card
+                    if (windowWidth <= 768) return 2; // Small tablet: 2 cards
+                    if (windowWidth <= 992) return 3; // Large tablet: 3 cards
+                    return 4; // Desktop: 4 cards
+                }
+                
+                // Ensure all cards are visible in DOM
+                cards.forEach(card => {
+                    card.style.display = 'block';
+                });
+                
+                let cardsPerPage = getCardsPerView();
+                const totalCards = cards.length;
+                let totalPages = Math.ceil(totalCards / cardsPerPage);
+                
+                let currentPage = 0;
+                
+                // Reset carousel position to show first set of cards
+                cardsWrapper.style.transform = 'translateX(0)';
+                
+                // Function to update carousel position
+                function updateCarousel() {
+                    // Get current card width based on responsive view
+                    const computedCardWidth = cards[0].getBoundingClientRect().width;
+                    const offset = -currentPage * cardsPerPage * computedCardWidth;
+                    
+                    // Apply transform with smooth transition
+                    cardsWrapper.style.transform = `translateX(${offset}px)`;
+                    
+                    // Update pagination dots
+                    paginationDots.forEach((dot, index) => {
+                        dot.classList.remove('active');
+                        // Only show pagination dots that are needed
+                        if (index < totalPages) {
+                            dot.style.display = 'block';
+                        } else {
+                            dot.style.display = 'none';
+                        }
+                    });
+                    
+                    // Make sure we don't try to activate a dot that doesn't exist
+                    if (currentPage < totalPages) {
+                        paginationDots[currentPage].classList.add('active');
+                    }
+                    
+                    console.log('Current page:', currentPage, 'Cards per page:', cardsPerPage, 'Total pages:', totalPages);
+                }
+                
+                // Recalculate layout when screen size changes
+                function handleResize() {
+                    const newCardsPerPage = getCardsPerView();
+                    
+                    // Only update if cards per page changed
+                    if (newCardsPerPage !== cardsPerPage) {
+                        cardsPerPage = newCardsPerPage;
+                        totalPages = Math.ceil(totalCards / cardsPerPage);
+                        
+                        // Make sure current page is valid
+                        if (currentPage >= totalPages) {
+                            currentPage = totalPages - 1;
+                        }
+                        
+                        // Update carousel with new layout
+                        updateCarousel();
+                    } else {
+                        // Still update to recalculate positions
+                        updateCarousel();
+                    }
+                }
+                
+                // Event listeners for next and previous buttons
+                nextButton.addEventListener('click', function() {
+                    if (currentPage < totalPages - 1) {
+                        currentPage++;
+                    } else {
+                        currentPage = 0; // Loop back to the first page
+                    }
+                    updateCarousel();
+                });
+                
+                prevButton.addEventListener('click', function() {
+                    if (currentPage > 0) {
+                        currentPage--;
+                    } else {
+                        currentPage = totalPages - 1; // Loop to the last page
+                    }
+                    updateCarousel();
+                });
+                
+                // Event listeners for pagination dots
+                paginationDots.forEach((dot, index) => {
+                    dot.addEventListener('click', function() {
+                        // Only allow clicking on dots that represent actual pages
+                        if (index < totalPages) {
+                            currentPage = index;
+                            updateCarousel();
+                        }
+                    });
+                });
+                
+                // Initialize carousel
+                window.addEventListener('resize', handleResize);
+                handleResize(); // Initial setup
+                
+                // Add touch/swipe support for mobile
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                carouselContainer.addEventListener('touchstart', function(e) {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, false);
+                
+                carouselContainer.addEventListener('touchend', function(e) {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, false);
+                
+                function handleSwipe() {
+                    const minSwipeDistance = 50;
+                    
+                    if (touchEndX < touchStartX - minSwipeDistance) {
+                        // Swiped left - go next
+                        if (currentPage < totalPages - 1) {
+                            currentPage++;
+                        } else {
+                            currentPage = 0;
+                        }
+                        updateCarousel();
+                    }
+                    
+                    if (touchEndX > touchStartX + minSwipeDistance) {
+                        // Swiped right - go previous
+                        if (currentPage > 0) {
+                            currentPage--;
+                        } else {
+                            currentPage = totalPages - 1;
+                        }
+                        updateCarousel();
+                    }
+                }
+            });
+        </script>
+
+     <script>
+  function loadAnalytics() {
+  const s = document.createElement('script');
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-K6N9WEW7B0';
+  s.async = true;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-K6N9WEW7B0', { send_page_view: true });
+}
+window.addEventListener('scroll', loadAnalytics, { once: true });
+
+</script>
+</body>
+</html>
