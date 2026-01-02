@@ -11181,10 +11181,6 @@ height: 100%;
     align-items: center;
     justify-content: center;
 }
-
-
-
-
 .Why-Choose-section{
   background: linear-gradient(#000000, #492424);
   position: relative;
@@ -11257,7 +11253,6 @@ padding: 30px 0px;
   left: 0;
   width: 100%;
   height: 100%; /* full height */
- 
   transform: translateY(100%); /* hide below */
   transition: transform 0.4s ease, background 0.4s ease;
   display: flex;
@@ -11267,13 +11262,18 @@ padding: 30px 0px;
   color: #fff;
 }
 
-/* Text initially hidden */
-.product-overview-section .overlay h3,
-.product-overview-section .overlay p {
-  opacity: 1;
-  transform: translateY(20px); /* move text slightly down */
-  transition: opacity 0.4s ease, transform 0.4s ease;
-  margin: 0;
+.product-overview-section .overlay-text{
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    z-index: 9;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.product-overview-section .slide:hover .overlay-text{
+    bottom: 100px;
 }
 
 /* Hover effect: text fades in and moves up */
@@ -11333,6 +11333,16 @@ background: linear-gradient(to top, #10283A, #0A1B1A);
 .product-feature-card li , .product-feature-card  a{
     color: #ffffff;
 }
+.power-theft-usually-section .product-feature-card .color-img-show{
+    display: none;
+}
+.power-theft-usually-section .product-feature-card:hover .back-and-white-img{
+    display: none;
+}
+.power-theft-usually-section .product-feature-card:hover .color-img-show{
+    display: block;
+}
+
 .theft-Identification-section .images {
   display: flex;
   justify-content: center;
@@ -11357,6 +11367,9 @@ display: block;
 .key-features .bi-chevron-down{
   transform: rotate(180deg);
 }
+.Impact-section .product-feature-title , .how-it-helps-section .product-feature-title{
+    font-weight: 500;
+}
 
 .product-overview-section .nav-wrapper {
   position: absolute;
@@ -11380,6 +11393,7 @@ display: block;
 .product-overview-section .nav:hover {
   background: #FF4545;
 } 
+
 .data-security-compliance-section img{
   width: 100%;
 }
