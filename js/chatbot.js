@@ -1019,7 +1019,7 @@ function projectIntelligentSystemTabShow() {
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `
- <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content"><b><a href="Intelligent-Theft-Detection-System-for-Power-Utilities" target="_blank" class="chatbot-links">A next-generation AI-powered platform that helps electricity distribution companies (DISCOMs)</a></b> detect, predict, and prevent power theft in real time. By analyzing consumption patterns, load anomalies, GIS data, and distribution feeder behavior it enables utilities to safeguard revenue and ensure an uninterrupted, reliable power supply.
+ <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content"><b><a href="Intelligent-Theft-Detection-System-for-Power-Utilities" target="_blank" class="chatbot-links">Intelligent Theft Detection System is </a></b> a next-generation AI-powered platform that helps electricity distribution companies (DISCOMs) detect, predict, and prevent power theft in real time. By analyzing consumption patterns, load anomalies, GIS data, and distribution feeder behavior it enables utilities to safeguard revenue and ensure an uninterrupted, reliable power supply.
 Built for Indian power distribution challenges, the system leverages machine learning, IoT signals, and behavioral analytics to highlight suspicious activities before they cause major losses.</div><div class="reply-message-time">${currentMessageTime}</div></div>
     `;
     chatbotContent.appendChild(aboutTab);
@@ -1067,7 +1067,7 @@ function projectAiCopilotSystemTabShow() {
     const aboutTab = document.createElement("div");
     aboutTab.className = "reply-message-container";
     aboutTab.innerHTML = `
- <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content">A breakthrough <b><a href="aI-copilot-for-mumbai-fire-brigade" target="_blank" class="chatbot-links"> AI-powered decision support system</a></b> designed exclusively for the Mumbai Fire Brigade. Our Copilot integrates real-time data streams, GIS intelligence, predictive analytics, and contextual risk modeling to help fire officers act faster, safer, and smarter.
+ <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content"><b><a href="aI-copilot-for-mumbai-fire-brigade" target="_blank" class="chatbot-links">AI Copilot is </a></b> a breakthrough AI-powered decision support system designed exclusively for the Mumbai Fire Brigade. Our Copilot integrates real-time data streams, GIS intelligence, predictive analytics, and contextual risk modeling to help fire officers act faster, safer, and smarter.
 From anticipating fire risks to assisting during on-ground emergencies, the AI Copilot transforms traditional fire management into a proactive, data-driven, and situationally aware ecosystem.</div><div class="reply-message-time">${currentMessageTime}</div></div>
     `;
     chatbotContent.appendChild(aboutTab);
