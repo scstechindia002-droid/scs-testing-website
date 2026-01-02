@@ -781,6 +781,8 @@ function productDetailsTabShow() {
     <button onclick="smartLandslideSystemTabShow()">Smart Landslide Early Warning System</button>
     <button onclick="gisBasedWorkManagementSystemTabShow()">GIS-Based Workforce and Fleet Management System</button>
     <button onclick="projectManagementSystemTabShow()">Project Process Management System</button>
+    <button onclick="projectIntelligentSystemTabShow()">Intelligent Theft Detection System for Power Utilities</button>
+    <button onclick="projectAiCopilotSystemTabShow()">AI Copilot For Mumbai Fire Brigade</button>
     </div>
  <div class="type-message-time">${currentMessageTime}</div>
 
@@ -987,6 +989,102 @@ function projectManagementSystemTabShow() {
   },1010)
 }
 
+function projectIntelligentSystemTabShow() {
+   currentMessageTime = ''
+  getCurrentMessageTime()
+  // ------------sendMessage---------------------
+  const typeMessage = document.createElement("div");
+  typeMessage.className = "typemessage-container";
+  typeMessage.innerHTML = `<div class="typemessage-content"><div class="type-message">Intelligent Theft Detection System for Power Utilities</div><div class="type-message-time">${currentMessageTime}</div></div>`;
+  chatbotContent.appendChild(typeMessage);
+
+  // ------------ animated loader ------------------
+  const animatedDotte = document.createElement("div");
+  animatedDotte.className = "animated-dotte-container";
+  animatedDotte.innerHTML = `
+    <div class="dotte"></div>
+    <div class="dotte dotte-two"></div>
+    <div class="dotte"></div>
+  `;
+  chatbotContent.appendChild(animatedDotte);
+  // scroll to bottom after adding loader
+  chatbotContent.scrollTo({
+    top: chatbotContent.scrollHeight,
+    behavior: "smooth",
+  });
+
+  setTimeout(() => {
+    animatedDotte.style.display = "none";
+    // add the reply message
+    const aboutTab = document.createElement("div");
+    aboutTab.className = "reply-message-container";
+    aboutTab.innerHTML = `
+ <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content"><b><a href="Intelligent-Theft-Detection-System-for-Power-Utilities" target="_blank" class="chatbot-links">A next-generation AI-powered platform that helps electricity distribution companies (DISCOMs)</a></b> detect, predict, and prevent power theft in real time. By analyzing consumption patterns, load anomalies, GIS data, and distribution feeder behavior it enables utilities to safeguard revenue and ensure an uninterrupted, reliable power supply.
+Built for Indian power distribution challenges, the system leverages machine learning, IoT signals, and behavioral analytics to highlight suspicious activities before they cause major losses.</div><div class="reply-message-time">${currentMessageTime}</div></div>
+    `;
+    chatbotContent.appendChild(aboutTab);
+    // scroll to bottom after adding the reply
+    chatbotContent.scrollTo({
+      top: chatbotContent.scrollHeight,
+      behavior: "smooth",
+    });
+  }, 1000);
+  setTimeout(() => {
+     // ------------sendMessage---------------------
+  const typeMessage = document.createElement("div");
+  typeMessage.className = "typemessage-container";
+  typeMessage.innerHTML = `<div class="chatbot-sagation-message"><div class="chatbot-details-btn-container"><button class="border-0 rounded-1" onclick="serviceTab()">Services </button> <button  class="border-0 rounded-1" onclick="IndustriesTabShow()">Industries</button> <button  class="border-0 rounded-1" onclick="productTabShow()">Products</button> <button  class="border-0 rounded-1" onclick="careersShow()">Careers</button><button class="border-0 rounded-1" onclick="contactDetailsTabShow()">Contact Us </button></div><div class="type-message-content">${currentMessageTime}</div></div>`;
+  chatbotContent.appendChild(typeMessage);
+  },1010)
+}
+function projectAiCopilotSystemTabShow() {
+   currentMessageTime = ''
+  getCurrentMessageTime()
+  // ------------sendMessage---------------------
+  const typeMessage = document.createElement("div");
+  typeMessage.className = "typemessage-container";
+  typeMessage.innerHTML = `<div class="typemessage-content"><div class="type-message">AI Copilot For Mumbai Fire Brigade</div><div class="type-message-time">${currentMessageTime}</div></div>`;
+  chatbotContent.appendChild(typeMessage);
+
+  // ------------ animated loader ------------------
+  const animatedDotte = document.createElement("div");
+  animatedDotte.className = "animated-dotte-container";
+  animatedDotte.innerHTML = `
+    <div class="dotte"></div>
+    <div class="dotte dotte-two"></div>
+    <div class="dotte"></div>
+  `;
+  chatbotContent.appendChild(animatedDotte);
+  // scroll to bottom after adding loader
+  chatbotContent.scrollTo({
+    top: chatbotContent.scrollHeight,
+    behavior: "smooth",
+  });
+
+  setTimeout(() => {
+    animatedDotte.style.display = "none";
+    // add the reply message
+    const aboutTab = document.createElement("div");
+    aboutTab.className = "reply-message-container";
+    aboutTab.innerHTML = `
+ <div class="chatbot-reply-icon"><img src="images/message-chatbot-icon2.png" alt="message-cion"></div> <div><div class="reply-message-content">A breakthrough <b><a href="aI-copilot-for-mumbai-fire-brigade" target="_blank" class="chatbot-links"> AI-powered decision support system</a></b> designed exclusively for the Mumbai Fire Brigade. Our Copilot integrates real-time data streams, GIS intelligence, predictive analytics, and contextual risk modeling to help fire officers act faster, safer, and smarter.
+From anticipating fire risks to assisting during on-ground emergencies, the AI Copilot transforms traditional fire management into a proactive, data-driven, and situationally aware ecosystem.</div><div class="reply-message-time">${currentMessageTime}</div></div>
+    `;
+    chatbotContent.appendChild(aboutTab);
+    // scroll to bottom after adding the reply
+    chatbotContent.scrollTo({
+      top: chatbotContent.scrollHeight,
+      behavior: "smooth",
+    });
+  }, 1000);
+  setTimeout(() => {
+     // ------------sendMessage---------------------
+  const typeMessage = document.createElement("div");
+  typeMessage.className = "typemessage-container";
+  typeMessage.innerHTML = `<div class="chatbot-sagation-message"><div class="chatbot-details-btn-container"><button class="border-0 rounded-1" onclick="serviceTab()">Services </button> <button  class="border-0 rounded-1" onclick="IndustriesTabShow()">Industries</button> <button  class="border-0 rounded-1" onclick="productTabShow()">Products</button> <button  class="border-0 rounded-1" onclick="careersShow()">Careers</button><button class="border-0 rounded-1" onclick="contactDetailsTabShow()">Contact Us </button></div><div class="type-message-content">${currentMessageTime}</div></div>`;
+  chatbotContent.appendChild(typeMessage);
+  },1010)
+}
 function careersShow(){
     window.location.href = 'career';
 }
