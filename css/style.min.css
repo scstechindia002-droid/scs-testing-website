@@ -11460,6 +11460,28 @@ height: 300px;
             height: 524px;
             margin-bottom: 16px;
     }
+     .system-architecture-section .system-architecture-list{
+        display: flex;
+        align-items: center;
+         background-color: #1A1A1A;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        transition: all 0.3s linear;
+       border-radius: 8px;
+    }
+    .system-architecture-section .system-architecture-list div{
+        background-color: #1A1A1A;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        padding: 10px 10px;
+    
+    }
+    .system-architecture-section .system-architecture-list:hover{
+      border: 1px solid;
+      border-image: linear-gradient(to left,#FF4545, #503131) 1;
+    }
+     
 @media screen and (max-width:1366px) {
     .power-theft-usually-section .product-feature-card{
         margin-bottom: 0px;
@@ -11471,6 +11493,10 @@ height: 300px;
     .urban-fire-safety-img{
         height: 100% !important;
     }
+    .system-architecture-image, .system-architecture-image img{
+        height: 100%;
+    }
+   
 }
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
@@ -11503,10 +11529,14 @@ height: 300px;
   }
   .Benefits-section-ai-copilot-page .card{
 margin-bottom: 10px;
+height: auto;
   }
  .urban-fire-safety-img{
     margin-top: 10px;
  }
+  .system-architecture-section .system-architecture-list{
+        display: block;
+    } 
 }
 
 /* ---------------------footer------------------ */
