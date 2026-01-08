@@ -11496,6 +11496,9 @@ height: 300px;
     .system-architecture-image, .system-architecture-image img{
         height: 100%;
     }
+    .system-architecture-image img{
+        max-height: 637px;
+    }
    
 }
 @media screen and (max-width: 768px) {
