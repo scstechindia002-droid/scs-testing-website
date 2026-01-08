@@ -11159,8 +11159,9 @@ background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
 .Benefits-section-ai-copilot-page .card:hover p {
     color: #ffffff;
 }
-.Benefits-section-ai-copilot-page .card{
+.Benefits-section-ai-copilot-page .card, .Benefits-section .card{
 height: 100%;
+width: 100%;
 }
 .key-features .btn-link{
     padding: 24px 30px;
@@ -11530,7 +11531,7 @@ height: 300px;
   .data-security-compliance-mobile-view{
     display: flex;
   }
-  .Benefits-section-ai-copilot-page .card{
+  .Benefits-section-ai-copilot-page .card , .Benefits-section .card{
 margin-bottom: 10px;
 height: auto;
   }
