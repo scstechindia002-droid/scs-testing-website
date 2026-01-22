@@ -2267,7 +2267,7 @@ a.bg-video-button-muted {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(34, 34, 34, 0.3);
+    /* background: rgba(34, 34, 34, 0.3); */
 }
 .bg-dark-alfa-50 .YTPOverlay:before,
 .bg-dark-alfa-50:before {

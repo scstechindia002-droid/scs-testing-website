@@ -46,14 +46,51 @@
          <link rel="preload" href="css/verticals.min.css" as="style" onload="this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="css/verticals.min.css"></noscript>
         <!-- <link rel="stylesheet" href="css/owl.carousel.css"> -->
-         <link rel="preload" href="css/owl.carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="css/owl.carousel.css"></noscript>
+         <!-- <link rel="preload" href="css/owl.carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="css/owl.carousel.css"></noscript> -->
+      <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         <!-- <link rel="stylesheet" href="css/magnific-popup.css">     -->
          <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="css/magnific-popup.css"></noscript>
  
          <!-- ------------------------font-awesome-icon------ -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <style>
+        .certifications-section {
+        background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1768303093/award-bg-image_jw6npq.webp');
+        background-position:50%;
+        background-size: cover;
+        background-attachment: unset;
+    }
+
+    .certifications-section .owl-carousel-certifications{
+           padding: 50px 0px;
+    }
+    .certifications-section .award-title{
+        font-size: 28px ;
+        font-weight: 500;
+        text-align: right;
+        color: #ffffff;
+        padding-top: 100px;
+    }
+    .certifications-section .award-image img{
+        height: 400px;
+        object-fit: contain;
+    }
+    @media screen and (max-width: 768px) {
+        .certifications-section .owl-carousel-certifications{
+            padding: 0px;
+        }
+        .certifications-section .award-title{
+            padding-top: 0px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+      </style>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215637589-1"></script>
 <script>
@@ -383,9 +420,82 @@
       </div></section>
             <main>
             <div class="hero-awards">
-                <p class="right-banner">awards & Recognition </p>
+                <p class="right-banner">awards & Certifications</p>
               </div>
-                    <section class="small-section  pb-10">
+<!-- ----------certifications-section -->
+<section class="small-section certifications-section">
+<div class="container1">
+    <!-- <div class="mb-5 relative d-flex justify-content-between align-items-center">
+                    <h2 class="m-0 left-heading">Certifications</h2>
+                </div> -->
+    <div class="owl-carousel owl-carousel-certifications owl-theme" id="slider2">
+    <div class="item">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="award-title">CMMI SVC | Level 5 Appraised</div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="award-image">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746552988/CMMI_L5certificate_1_whjqgw.jpg" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="award-title">ISO 9001:2015 - Quality Management System</div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="award-image">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746531843/ISO_9001-2015_New_1_ewvbgn.jpg" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="award-title">ISO 20000-1:2018 - IT Service Management</div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="award-image">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746531842/ISO_20000-1_1_jxt59e.jpg" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="award-title">ISO 45001:2018 - Occupational Health & Safety Management</div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="award-image">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746531842/ISO_45001-2018_New_1_y6qcvi.jpg" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+                <div class="award-title">ISO 27001:2022 - Information Security Management</div>
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="award-image">
+                    <img loading="lazy" src="https://res.cloudinary.com/dyfpbxcip/image/upload/v1746531842/ISO_27001-2022_1_q8xzzu.jpg" alt="Award image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+</div>
+</section>
+
+                    <!-- <section class="small-section  pb-10">
                          
                        <div class="container1">
                         <div class="row">
@@ -464,7 +574,7 @@
                          
                        </div>
                       
-                    </section>
+                    </section> -->
                     </main>
              <!-- Footer -->
                   
@@ -592,9 +702,18 @@
                       </div>
                   
 </footer>
+
+
+
+
+
         </div>
             <!-- JS -->
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+         <!-- jQuery v1.11.2 only-new-owl-slider -->
+         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+         <!-- Owl Carousel JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>   
@@ -606,7 +725,7 @@
         <script type="text/javascript" src="js/jquery.appear.js"></script>
         <script type="text/javascript" src="js/jquery.sticky.js"></script>
         <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- <script type="text/javascript" src="js/owl.carousel.min.js"></script> -->
         <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
         <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
@@ -628,6 +747,21 @@
   gtag('config', 'G-K6N9WEW7B0', { send_page_view: true });
 }
 window.addEventListener('scroll', loadAnalytics, { once: true });
+
+</script>
+<script>
+      // Slider 2
+      $('#slider2').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        items:1,
+         
+      });
 
 </script>
     </body>
