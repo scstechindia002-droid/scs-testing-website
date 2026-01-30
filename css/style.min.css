@@ -11104,13 +11104,17 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 30px;
-padding: 30px 0px;
+margin: 0 auto;
+
 }
 .theft-Identification-section .card{
 background-color: transparent;
 border: 1px solid #FF4545;
 color: #ffffff;
 transition: all 0.3s linear;
+
+height: 230px;
+margin-bottom: 26px;
 }
 .theft-Identification-section .card:hover{
 background-color: #FF4545;
@@ -11245,7 +11249,7 @@ padding: 30px 0px;
 
 .product-overview-section .slide img {
   width: 100%;
-  height: 350px;
+  height: 460px;
   object-fit: cover;
   display: block;
 }
@@ -11277,7 +11281,7 @@ padding: 30px 0px;
     transition: all 0.3s linear;
 }
 .product-overview-section .slide:hover .overlay-text{
-    bottom: 100px;
+    bottom: 160px;
 }
 
 /* Hover effect: text fades in and moves up */
@@ -11486,7 +11490,16 @@ height: 300px;
       border: 1px solid;
       border-image: linear-gradient(to left,#FF4545, #503131) 1;
     }
-     
+     .urban-fire-safety-img{
+        width: 100% !important;
+        height: 100% !important;
+     }
+    @media screen and (max-width: 1440px) {
+        .system-architecture-image img{
+            height: 640px;
+        }
+
+    }
 @media screen and (max-width:1366px) {
     .power-theft-usually-section .product-feature-card{
         margin-bottom: 0px;
@@ -11495,16 +11508,27 @@ height: 300px;
             height: 543px;
                margin-bottom: 16px;
     }
-    .urban-fire-safety-img{
-        height: 100% !important;
-    }
+   
     .system-architecture-image, .system-architecture-image img{
         height: 100%;
     }
     .system-architecture-image img{
-        max-height: 637px;
+        height: 638px;
+    }
+    .product-overview-section .slide img {
+        height: 370px;
     }
    
+}
+@media screen and (max-width: 1081px) {
+        .system-architecture-image img{
+            height: 676px;
+        }
+}
+@media screen and (max-width: 991px) {
+        .system-architecture-image img{
+            height: 738px;
+        }
 }
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
@@ -11541,6 +11565,7 @@ height: auto;
   }
  .urban-fire-safety-img{
     margin-top: 10px;
+    
  }
   .system-architecture-section .system-architecture-list{
         display: block;
