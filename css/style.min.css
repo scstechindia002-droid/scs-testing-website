@@ -250,16 +250,16 @@ iframe {
     border: none;
 }
 ::-moz-selection {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 ::-webkit-selection {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 ::selection {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 .animate,
 .animate *,
@@ -11491,14 +11491,30 @@ height: 300px;
       border-image: linear-gradient(to left,#FF4545, #503131) 1;
     }
      .urban-fire-safety-img{
-        width: 100% !important;
+        width: 100%  ;
         height: 100% !important;
      }
-    @media screen and (max-width: 1440px) {
+     @media screen and (max-width: 2080px) {
+         .system-architecture-image img{ 
+            width: 100%;
+            height: 640px;
+         }
+     }
+      @media screen and (max-width: 1940px) {
+        .system-architecture-image img{
+            width: 100%;
+            height: 640px;
+        }
+       
+
+    }
+    @media screen and (max-width: 1550px) {
         .system-architecture-image img{
             height: 640px;
         }
-
+.urban-fire-safety-img{
+  height: 100% !important;
+}
     }
 @media screen and (max-width:1366px) {
     .power-theft-usually-section .product-feature-card{
@@ -11520,6 +11536,11 @@ height: 300px;
     }
    
 }
+   @media screen and (max-width: 1250px){
+.system-architecture-image img{
+    height: 674px;
+}
+   }
 @media screen and (max-width: 1081px) {
         .system-architecture-image img{
             height: 676px;
@@ -11932,6 +11953,20 @@ width: 100%;
       }
       .why-choose-scs-tech-section .col-md-3{
         margin-bottom: 30px;
+      }
+      .faq-section .btn-link {
+        align-items: unset;
+      }
+      .faq-section .btn i{
+        width: 24px;
+        height: 24px;
+        align-items: center;
+      }
+      .faq-section .btn-link{
+        font-size: 14px;
+      }
+      .faq-section .accordion p{
+        font-size: 12px;
       }
    }
 @media screen and (max-width: 1440px) {
