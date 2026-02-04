@@ -11844,7 +11844,7 @@ height: auto;
     background-color: #FF4545;
     color: #ffffff;
     display: flex;
-    align-items: unset;
+    align-items: center;
     justify-content: center;
     text-align: center;
       
@@ -11855,8 +11855,8 @@ height: auto;
     transform: rotate(0deg);
 }
   .faq-section .bi-chevron-down::before {
-     content:"+";
-     transform: rotate(0deg);
+     content:"\f282";
+   transform: rotate(180deg);
      
 }
 
@@ -11865,8 +11865,9 @@ height: auto;
     background-color:#1D1D1D;
 }
   .faq-section .btn-link.collapsed i::before {
-    content:"-";
+    content:"\f282";
     text-align: center;
+    transform: rotate(0deg);
     
 }
 
@@ -11960,6 +11961,7 @@ width: 100%;
       .faq-section .btn i{
         width: 24px;
         height: 24px;
+        min-width: 24px;
         align-items: center;
       }
       .faq-section .btn-link{
