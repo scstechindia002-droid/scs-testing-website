@@ -11844,7 +11844,7 @@ height: auto;
     background-color: #FF4545;
     color: #ffffff;
     display: flex;
-    align-items: center;
+    align-items: unset;
     justify-content: center;
     text-align: center;
       
@@ -11855,8 +11855,8 @@ height: auto;
     transform: rotate(0deg);
 }
   .faq-section .bi-chevron-down::before {
-     content:"\f282";
-   transform: rotate(180deg);
+     content:"-";
+   transform: rotate(0deg);
      
 }
 
@@ -11865,9 +11865,9 @@ height: auto;
     background-color:#1D1D1D;
 }
   .faq-section .btn-link.collapsed i::before {
-    content:"\f282";
+    content:"+";
     text-align: center;
-    transform: rotate(0deg);
+   
     
 }
 
