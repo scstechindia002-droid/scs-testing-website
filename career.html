@@ -184,7 +184,7 @@
                             <li><a href="education">Education</a></li>
                             <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
                             <li><a href="solid-waste-management">Solid Waste Management</a></li>
-                           
+                            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
                             
                         </ul>
                     </div>
@@ -329,7 +329,7 @@
                           <li><a href="education">Education</a></li>
                           <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
                           <li><a href="solid-waste-management">Solid Waste Management</a></li>
-                         
+                          <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
                       </ul>
                   </div>
                   
@@ -505,7 +505,7 @@
                 <div class="row">
                     <!-- Team Member 1 -->
                     
-                    <div class="col-lg-4 col-md-6 team-member">
+                    <div class="col-lg-4 col-md-6 team-member team-1">
                         <div class="team-member-video" id="player-anurag" data-video-id="BxXUdxwfQRc" style="background-image: url('https://img.youtube.com/vi/BxXUdxwfQRc/maxresdefault.jpg'); height: 300px; width: 100%; background-size: cover; background-position: center;">
                           <div class="video-overlay">
                               <div class="play-button1"></div>
@@ -517,8 +517,8 @@
                       
                     <!-- Team Member 2 -->
                    
-                    <div class="col-lg-4 col-md-6 team-member">
-                      <div class="team-member-video" data-video-id="ITMbVlIbCao"   style="background-image: url('https://img.youtube.com/vi/ITMbVlIbCao/maxresdefault.jpg'); height: 300px; width: 100%; background-size: cover; background-position: center;">
+                    <div class="col-lg-4 col-md-6 team-member  team-2">
+                      <div class="team-member-video " data-video-id="ITMbVlIbCao"   style="background-image: url('https://img.youtube.com/vi/ITMbVlIbCao/maxresdefault.jpg'); height: 300px; width: 100%; background-size: cover; background-position: center;">
                           <div class="video-overlay">
                               <div class="play-button1"></div>
                           </div>
@@ -527,7 +527,7 @@
                       <p class="team-member-title">VP- Technology & Business Development</p>
                   </div>
                     <!-- Team Member 3 -->
-                    <div class="col-lg-4 col-md-6 team-member">
+                    <div class="col-lg-4 col-md-6 team-member  team-3">
                         <div class="team-member-video" data-video-id="vo8T-Gtjty8" style="background-image: url('https://img.youtube.com/vi/vo8T-Gtjty8/maxresdefault.jpg'); height: 300px; width: 100%; background-size: cover; background-position: center;">
                             <div class="video-overlay">
                                 <div class="play-button1"></div>
@@ -777,7 +777,7 @@
             <li><a href="education">Education</a></li>
             <li><a href="critical-it-and-urban-infrastructure">Critical IT & Urban Infrastructure</a></li>
             <li><a href="solid-waste-management">Solid Waste Management</a></li>
-            
+            <li><a href="capacity-building-and-skill-development">Capacity Building & Skill Development</a></li>
           </ul>
         </ul>
           <ul class="navbar-nav footer-dorpdown ">
@@ -1160,12 +1160,14 @@
       
         // Called when the YouTube API is ready
         function onYouTubeIframeAPIReady() {
+           
           document.querySelectorAll('.team-member-video').forEach((container, index) => {
             const videoId = container.getAttribute('data-video-id');
             const uniqueId = container.id || `player-${index}`;
             container.id = uniqueId;
       
             container.addEventListener('click', function () {
+
               container.innerHTML = `<div id="yt-${uniqueId}"></div>`;
               players[uniqueId] = new YT.Player(`yt-${uniqueId}`, {
                 videoId: videoId,
@@ -1211,6 +1213,76 @@
             }
           });
         }
+    
+
+
+        //--------------------next video click to first video hide
+        const teamOne = document.querySelector('.team-1');
+const teamTwo = document.querySelector('.team-2');
+const teamThree = document.querySelector('.team-3');
+
+function removeOtherIframes(activeTeam) {
+  const teams = [teamOne, teamTwo, teamThree];
+
+  teams.forEach(team => {
+    if (team !== activeTeam) {
+      const iframe = team.querySelector('iframe');
+      if (iframe) {
+        iframe.remove();
+        
+      }
+    }
+  });
+}
+
+teamOne.addEventListener('click', () => {
+  removeOtherIframes(teamOne);
+
+  // Create overlays separately for each player
+  const createDiv1 = document.createElement('div');
+  createDiv1.className = "video-overlay";
+  createDiv1.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-1').appendChild(createDiv1);
+
+  const createDiv2 = document.createElement('div');
+  createDiv2.className = "video-overlay";
+  createDiv2.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-2').appendChild(createDiv2);
+});
+
+teamTwo.addEventListener('click', () => {
+  removeOtherIframes(teamTwo);
+
+  const createDiv1 = document.createElement('div');
+  createDiv1.className = "video-overlay";
+  createDiv1.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-2').appendChild(createDiv1);
+
+  const createDiv2 = document.createElement('div');
+  createDiv2.className = "video-overlay";
+  createDiv2.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-anurag').appendChild(createDiv2);
+});
+
+teamThree.addEventListener('click', () => {
+  removeOtherIframes(teamThree);
+
+  const createDiv1 = document.createElement('div');
+  createDiv1.className = "video-overlay";
+  createDiv1.innerHTML = `<div class="play-button1"></div>`;
+  document.querySelector('.team-member-video').appendChild(createDiv1);
+
+  const createDiv2 = document.createElement('div');
+  createDiv2.className = "video-overlay";
+  createDiv2.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-1').appendChild(createDiv2);
+
+  const createDiv3 = document.createElement('div');
+  createDiv3.className = "video-overlay";
+  createDiv3.innerHTML = `<div class="play-button1"></div>`;
+  document.getElementById('player-anurag').appendChild(createDiv3);
+});
+
       </script>
       <script src="https://www.youtube.com/iframe_api"></script>
       
