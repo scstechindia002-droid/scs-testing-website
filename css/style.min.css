@@ -250,16 +250,16 @@ iframe {
     border: none;
 }
 ::-moz-selection {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
 }
 ::-webkit-selection {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
 }
 ::selection {
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
 }
 .animate,
 .animate *,
@@ -5896,7 +5896,7 @@ section:hover .small-item-carousel .owl-next {
     font-size: 50px;
     font-weight: 500;
     line-height: 1 px;
-    text-transform: capitalize;
+    text-transform: unset;
 }
 .marquee-body {
     background: #000;
@@ -5928,6 +5928,7 @@ section:hover .small-item-carousel .owl-next {
 .marquee:hover {
     animation-play-state: paused;
 }
+
 @keyframes marquee-left {
     0% {
         transform: translateX(0);
@@ -6795,7 +6796,7 @@ textarea.form-control {
     background-image: url("https://res.cloudinary.com/dyfpbxcip/image/upload/v1746726580/modern-equipped-computer-lab.jpg");
 }
 .hero-allSectors {
-    background-image: url("https://res.cloudinary.com/dyfpbxcip/image/upload/v1769681833/Rectangle_kxkkiu.webp");
+    background-image: url("https://res.cloudinary.com/dyfpbxcip/image/upload/v1746815275/Rectangle_19544.jpg");
 }
 .hero-career {
     width: 100%;
@@ -9201,10 +9202,10 @@ p.career-text {
 }
 .product-feature-title {
     color: #fff;
-    font-size: 15px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    line-height: 23px;
+    line-height: 33px;
     margin-bottom: 8px;
 }
 .product-feature-description {
@@ -9283,6 +9284,9 @@ p.career-text {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+.power-theft-usually-section .product-feature-image{
+    height: unset !important;
 }
 @media (max-width: 767.98px) {
     .contact-section {
@@ -11099,22 +11103,21 @@ transition: transform 0.3s;
 .key-features .btn-link.collapsed i {
 transform: rotate(-90deg);
 }
+.key-features .accordion p{
+    margin: 0px 0px 10px 25px;
+}
 .theft-Identification-section .card-container, .Benefits-section .card-container{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 30px;
-margin: 0 auto;
-
+padding: 30px 0px;
 }
 .theft-Identification-section .card{
 background-color: transparent;
 border: 1px solid #FF4545;
 color: #ffffff;
 transition: all 0.3s linear;
-
-height: 230px;
-margin-bottom: 26px;
 }
 .theft-Identification-section .card:hover{
 background-color: #FF4545;
@@ -11139,7 +11142,7 @@ border:none;
 }
 
 .Benefits-section  .card:hover{
-background: linear-gradient(to top, #FF4545,#323232,#1A1A1A);
+background: linear-gradient(to top, #FF4545,#6c2422, #1A1A1A,#1A1A1A);
 }
 .Benefits-section  .card .check-img{
   width: 50px;
@@ -11260,20 +11263,21 @@ padding: 30px 0px;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* full height */
-  transform: translateY(100%); /* hide below */
+  height: 100%; 
+  transform: translateY(100%); 
   transition: transform 0.4s ease, background 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 100px 15px;
   color: #fff;
+  border-radius: 6px;
 }
 
 .product-overview-section .overlay-text{
     position: absolute;
     bottom: 30px;
-    left: 15px;
+    padding: 15px;
     z-index: 9;
     font-size: 1rem;
     font-weight: 500;
@@ -11281,7 +11285,7 @@ padding: 30px 0px;
     transition: all 0.3s linear;
 }
 .product-overview-section .slide:hover .overlay-text{
-    bottom: 160px;
+    bottom: 100px;
 }
 
 /* Hover effect: text fades in and moves up */
@@ -11303,7 +11307,7 @@ background: linear-gradient(to top, #995725, #2A2118);
 .product-overview-section .slider-3:hover .overlay{
 background: linear-gradient(to top, #677673, #222126);
  transform: translateY(0);
- opacity: 0.7;
+ opacity: 0.9;
 }
 .product-overview-section .slider-4:hover .overlay{
 background: linear-gradient(to top, #06548C, #04061C);
@@ -11335,6 +11339,13 @@ background: linear-gradient(to top, #10283A, #0A1B1A);
  transform: translateY(0);
  opacity: 0.7;
 }
+/* ------Expertise-all-pages-slider-hover-background-color- */
+.product-overview-section .expertise-slider:hover .overlay{
+background: linear-gradient(to top, #262626, #131313);
+ transform: translateY(0);
+ opacity: 0.95;
+}
+
 .product-feature-card ul{
     padding: 0px 18px;
 }
@@ -11466,7 +11477,7 @@ height: 300px;
     }
     .power-theft-usually-section .electric-pol-img{
         width: 100%;
-            height: 524px;
+            height: 664px;
             margin-bottom: 16px;
     }
      .system-architecture-section .system-architecture-list{
@@ -11490,66 +11501,87 @@ height: 300px;
       border: 1px solid;
       border-image: linear-gradient(to left,#FF4545, #503131) 1;
     }
-     .urban-fire-safety-img{
-        width: 100%  ;
-        height: 100% !important;
-     }
-     @media screen and (max-width: 2080px) {
-         .system-architecture-image img{ 
-            width: 100%;
-            height: 640px;
-         }
-     }
-      @media screen and (max-width: 1940px) {
-        .system-architecture-image img{
-            width: 100%;
-            height: 640px;
-        }
-       
 
+
+    
+    /* ---------all-Expertise-page-key-outcome-section---------- */
+
+    .key-outcome-section .key-outcome-card-container{
+        width: 90%;
+        margin: 0 auto;
     }
-    @media screen and (max-width: 1550px) {
-        .system-architecture-image img{
-            height: 640px;
+    .key-outcome-section .card{
+        background: linear-gradient(to top, #2D2D2D, #131313);
+        color: #ffffff;
+        padding: 20px;
+        border: 1px solid #828282;
+        transition: all 0.3s linear;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 10px #000000;
+    }
+    .key-outcome-section .card:hover{
+        transform: translateY(-10px);
+        background: linear-gradient(to top , #FF3030,#FF4545)
+    }
+    .key-outcome-section .card .description{
+        font-size: 21px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+     .key-outcome-section .card .light-icon{
+        display: none;
+     }
+      .key-outcome-section .card:hover .dark-icon{
+        display: none;
+      }
+       .key-outcome-section .card:hover .light-icon{
+        display: block;
+       }
+
+     @media screen and (max-width: 2050px){
+  .power-theft-usually-section .electric-pol-img{
+            height: 866px;
         }
-.urban-fire-safety-img{
-  height: 100% !important;
-}
+        .Why-Choose-section .card-container .card{
+            width: 100%;
+            /* height: 350px; */
+        }
+     }
+      @media screen and (max-width: 1950px){
+          .power-theft-usually-section .electric-pol-img{
+            height: 724px;
+        }
+      }
+     @media screen and (max-width: 1650px){
+          .power-theft-usually-section .electric-pol-img{
+            height: 661px;
+        }
+     }
+    @media screen and (max-width: 1440px) {
+        .power-theft-usually-section .electric-pol-img{
+            height: 598px;
+        }
     }
 @media screen and (max-width:1366px) {
     .power-theft-usually-section .product-feature-card{
         margin-bottom: 0px;
     }
    .power-theft-usually-section .electric-pol-img{
-            height: 543px;
+            height: 586px;
                margin-bottom: 16px;
     }
-   
+    .urban-fire-safety-img{
+        height: 100% !important;
+    }
     .system-architecture-image, .system-architecture-image img{
         height: 100%;
     }
     .system-architecture-image img{
-        height: 638px;
-    }
-    .product-overview-section .slide img {
-        height: 370px;
+        max-height: 637px;
     }
    
-}
-   @media screen and (max-width: 1250px){
-.system-architecture-image img{
-    height: 674px;
-}
-   }
-@media screen and (max-width: 1081px) {
-        .system-architecture-image img{
-            height: 676px;
-        }
-}
-@media screen and (max-width: 991px) {
-        .system-architecture-image img{
-            height: 738px;
-        }
 }
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
@@ -11586,11 +11618,23 @@ height: auto;
   }
  .urban-fire-safety-img{
     margin-top: 10px;
-    
  }
   .system-architecture-section .system-architecture-list{
         display: block;
     } 
+    .product-description-1 {
+        text-align: left;
+    }
+    .Why-Choose-section .card-body{
+        display: block;
+        text-align: center;
+    }
+    .contact-us-heading2{
+        font-size: 28px;
+    }
+    .product-title{
+        line-height: 44px !important;
+    }
 }
 
 /* ---------------------footer------------------ */
@@ -11707,7 +11751,7 @@ height: auto;
 
 
 
-/* ----------new-desgin-changes-ccc */
+/* ----------new-design-changes-all-product-page-css and some Expertise page */
 
     .heroH1Sector{text-align: left;}
     .heroH2Sector{text-align: left; }
@@ -11852,23 +11896,22 @@ height: auto;
 
 .faq-section .bi-chevron-down i{
     background-color: #1D1D1D;
-    transform: rotate(0deg);
+   
 }
   .faq-section .bi-chevron-down::before {
      content:"-";
-   transform: rotate(0deg);
-     
 }
 
 
 .faq-section .btn-link:not(.collapsed) .bi-chevron-down {
     background-color:#1D1D1D;
+    transform: unset ;
+    
 }
   .faq-section .btn-link.collapsed i::before {
     content:"+";
     text-align: center;
-   
-    
+    transform: unset;
 }
 
 
@@ -11911,7 +11954,7 @@ width: 100%;
     background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1769496854/transport-and-logistic-contact-us_qkwxog.webp');
    }
    .telecom-contact-us{
-    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1769774678/telecom_contact_us_image_erywfs.webp');
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1746725819/telecommunications-towers-against-cloudy-sky.jpg');
    }
    .healthcare-contact-us{
     background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1769509366/healthcare-contact-us_image_zk7rzy.webp');
@@ -11928,7 +11971,36 @@ width: 100%;
    .solid-waste-management-contact-us{
      background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1769581433/conveyor-sorting-garbage-waste-by-people-garbage-processing2_bptsgx.webp');
    }
-
+   .digital-transformation-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770189878/digital-transformation_contact_us_image_jxwcwj.webp');
+   }
+   .software-development-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770204331/software_development_contact_us_image_jbmyq4.webp');
+   }
+.ai-ml-and-data-analytics-services-contact-us{
+     background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770276076/ai_ml_and_data_analytics_services_contact_us_image_obvy2o.webp');
+}
+.robotic-process-automation-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770285498/robotic_process_automation_contact_us_image_yjwhwy.webp');
+}
+.blockchain-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770357742/blockchain_contact_us_image_qt988j.webp');
+}
+.geographic-information-system-gis-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770372338/geographic_information_system_gis_contact_us_image_sy6szw.webp');
+}
+.cybersecurity-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770613404/cybersecurity_contact_us_image_psym0h.webp');
+}
+.Cloud-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770618623/Cloud_contact_us_image_b9aonl.webp');
+}
+.data-center-services-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770641079/data_center_services_contact_us_image_rnjpgr.webp');
+}
+.disaster-emergency-services-contact-us{
+    background-image: url('https://res.cloudinary.com/dyfpbxcip/image/upload/v1770705292/disaster_emergency_services_contact_us_image_ulztds.webp');
+}
    @media screen and (max-width: 600px) {
     .solutions-Deliver-section .card-body .card-contant {
            top: 50%;
@@ -11955,25 +12027,141 @@ width: 100%;
       .why-choose-scs-tech-section .col-md-3{
         margin-bottom: 30px;
       }
-      .faq-section .btn-link {
+      .faq-section .btn-link{
         align-items: unset;
       }
       .faq-section .btn i{
-        width: 24px;
-        height: 24px;
-        min-width: 24px;
-        align-items: center;
-      }
-      .faq-section .btn-link{
-        font-size: 14px;
-      }
-      .faq-section .accordion p{
-        font-size: 12px;
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
       }
    }
+
+
+        /* -------product and Expertise css  */
+       
+         .product-overview-section {
+               position: relative;
+             }
+               .product-overview-section .owl-carousel{
+                margin-bottom:50px;
+               }
+            .product-overview-section .item img{
+                height: 460px;
+                border-radius: 8px !important;
+            }
+           
+             .product-overview-section .owl-nav{
+               position: absolute;
+              bottom: -66px;
+              right: 50px;
+
+           }
+            .product-overview-section .owl-nav button.owl-prev {
+                background-color: #fff !important ;
+                color: #222 !important;
+                  left: -50px;
+            }
+            .product-overview-section .owl-nav button.owl-prev:hover{
+                background-color: #FF4545 !important;
+                color: #fff !important;
+                left: -50px;
+            }
+            .product-overview-section .owl-nav button.owl-next{
+                   background-color: #fff !important;
+                color: #222 !important;
+                left: 0px;
+            }
+             .product-overview-section .owl-nav button.owl-next:hover{
+                  background-color: #FF4545 !important;
+                  color: #fff !important;
+                  right: 0px;
+             }
+            .product-overview-section .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+                  display: block;
+            }
+            .Only-expertise-section .item .overlay-text{
+                top: 80%;
+            }
+             .Only-expertise-section .item .overlay-text .description{
+                display: none;
+                font-weight: 300;
+             }
+.Only-expertise-section .item:hover .overlay-text{
+    top: 20px;
+}
+.Only-expertise-section .item:hover .description{
+    display: block;
+}
+            .Some-use-cases-section .card{
+                border: 25px solid #1d1d1d;
+                background-color: #272727;
+                outline: 1px solid #696060;
+                color: #fff;
+                margin-bottom: 34px;
+                height: 260px;
+            }
+             .Some-use-cases-section .card .card-body{
+                display: flex;
+                gap: 20px;
+             }
+             .Some-use-cases-section .card .card-body .title{
+                font-size: 22px;
+                font-weight: 500;
+                margin-bottom: 10px;
+             }
+             .Some-use-cases-section .card .card-body .description{
+                font-size: 16px;
+                font-weight: 300;
+             }
+
+             @media screen and (max-width: 1536px) {
+                .Some-use-cases-section .card{
+                    height: 260px;
+                }
+                  .Some-use-cases-section .card .card-body .title{
+                font-size: 18px;
+                
+             }
+             .Some-use-cases-section .card .card-body .description{
+                font-size: 16px;
+                font-weight: 300;
+             }
+             }
 @media screen and (max-width: 1440px) {
     .why-choose-scs-tech-section .card .card-title{
         font-size: 18px;
         line-height: 30px;
     }
+    .Only-expertise-section .item .overlay-text {
+    top: 74%;
 }
+       .Some-use-cases-section .card {
+        height: 300px;
+    }
+}
+             @media screen and (max-width: 768px) {
+                .product-overview-section .owl-carousel {
+    margin-bottom: 40px;
+}
+                  .Some-use-cases-section .card{
+                    height: 316px;
+                    margin-top: 20px;
+                  }
+               .Some-use-cases-section .card .card-body{
+                    display: block;
+                    text-align: center;
+                
+                }
+                .Some-use-cases-section .card .card-body img{
+                    width: 60px;
+                }
+                .Why-Choose-section .card-container {
+                    padding-top: 20px;
+                }
+                .Why-Choose-section .card-container .card {
+                    margin-bottom: 20px;
+                }
+             }
+       
+            
