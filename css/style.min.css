@@ -11111,13 +11111,15 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 30px;
-padding: 30px 0px;
+padding: 0px 0px;
 }
 .theft-Identification-section .card{
 background-color: transparent;
 border: 1px solid #FF4545;
 color: #ffffff;
 transition: all 0.3s linear;
+height: 230px;
+margin-bottom: 30px;
 }
 .theft-Identification-section .card:hover{
 background-color: #FF4545;
@@ -11556,7 +11558,7 @@ height: 300px;
       }
      @media screen and (max-width: 1650px){
           .power-theft-usually-section .electric-pol-img{
-            height: 661px;
+            height: 587px;
         }
      }
     @media screen and (max-width: 1440px) {
@@ -11569,7 +11571,7 @@ height: 300px;
         margin-bottom: 0px;
     }
    .power-theft-usually-section .electric-pol-img{
-            height: 586px;
+            height: 522px;
                margin-bottom: 16px;
     }
     .urban-fire-safety-img{
@@ -11582,6 +11584,16 @@ height: 300px;
         max-height: 637px;
     }
    
+}
+
+@media screen and (max-width: 1025px) {
+     .power-theft-usually-section .electric-pol-img{
+            height: 391px;
+               margin-bottom: 16px;
+    }
+    .theft-Identification-section .card{
+        height: 260px;
+    }
 }
 @media screen and (max-width: 768px) {
   .Why-Choose-section .card-container{
