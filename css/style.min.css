@@ -12177,6 +12177,7 @@ width: 100%;
              @media screen and (max-width: 768px) {
                 .hero-content{
                     width: 340px;
+                    margin-top: 7rem;
                 }
                 .key-features .btn i{
                     min-width: 30px;
