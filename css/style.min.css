@@ -258,9 +258,10 @@ iframe {
     background: #000;
 }
 ::selection {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
+
 .animate,
 .animate *,
 .blog-item-q p:after,
@@ -1611,13 +1612,15 @@ a.bg-video-button-muted {
     margin-right: 20px;
 }
 .navbar-toggler {
-    padding: 0.25rem 0.75rem;
+       padding: 4px 16px !important;
+    /* padding: 0.25rem 0.75rem; */
     font-size: 1.25rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0.25rem;
     color: #fff;
+   
 }
 .navbar-collapse {
     justify-content: center;
@@ -12479,6 +12482,12 @@ width: 100%;
 }
 
   @media screen and (max-width: 600px) {
+    /* ----only-navbar-toggle-button--- */
+  .navbar-toggler{
+       display: flex !important;
+       justify-content: center !important;
+       align-items: center !important;
+    }
         .product-card-container{
             margin-top: 20px;
         }
