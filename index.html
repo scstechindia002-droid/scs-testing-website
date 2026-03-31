@@ -2030,10 +2030,13 @@ window.addEventListener('scroll', loadAnalytics, { once: true });
         1000: { items: 3 }
     },
     navText: [
-        '<span class="prev"><i class="fa fa-angle-left" aria-hidden="true" aria-label="Previous button"></i></span>',
-        '<span class="next"><i class="fa fa-angle-right" aria-hidden="true" aria-label="Next button"></i></span>'
+        '<span class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+        '<span class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>'
     ]
+    
 });
+$('.owl-prev').attr('aria-label', 'Previous slide');
+$('.owl-next').attr('aria-label', 'Next slide');
 
     // Slider 2
       $('#slider2').owlCarousel({
